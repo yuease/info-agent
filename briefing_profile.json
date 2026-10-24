@@ -1,0 +1,32 @@
+{
+  "schema_version": 2,
+  "profile_id": "default",
+  "rsshub_url": "http://127.0.0.1:1200",
+  "keywords": [
+    "codex"
+  ],
+  "interests": "我想知道codex什么时候重置，今天有什么更新",
+  "max_picks": 5,
+  "max_candidates": 60,
+  "max_duration_seconds": null,
+  "exploration_ratio": 0.2,
+  "history_cooldown_days": 14.0,
+  "snooze_days": 3.0,
+  "learning": {
+    "enabled": true,
+    "half_life_days": 60.0,
+    "max_score_adjustment": 5.0,
+    "max_rank_movement": 1,
+    "activation_min_videos": 3,
+    "activation_min_days": 3,
+    "activation_net": 1.5,
+    "activation_consistency": 0.7,
+    "daily_cap": 1.0,
+    "max_tags": 5,
+    "duration_buckets": [
+      300,
+      1200,
+      3600
+    ]
+  }
+}

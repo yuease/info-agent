@@ -1,0 +1,26 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+workspace/*
+!workspace/.gitkeep
+docs/rsshub-deploy/image-cache/
+docs/rsshub-deploy/local-deps/
+docs/rsshub-deploy/*.log
+docs/rsshub-deploy/*test.xml
+!docs/rsshub-deploy/cursor-test.xml
+
+# Local persistence and private key material must never be published.
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.db-wal
+*.db-shm
+*.pem
+*.key
+id_rsa
+id_ed25519

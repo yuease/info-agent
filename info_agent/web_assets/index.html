@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>拾讯 · 个人信息简报</title><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="#briefing" data-view="briefing"><span class="brand-mark">拾</span><span>拾讯<small>INFO AGENT</small></span></a>
+    <div class="nav-caption">你的信息工作台</div>
+    <nav aria-label="主导航">
+      <button data-view="briefing" class="nav active"><span class="nav-icon">▤</span>我的简报</button>
+      <button data-view="history" class="nav"><span class="nav-icon">◷</span>历史记录</button>
+      <button data-view="preferences" class="nav"><span class="nav-icon">◎</span>偏好学习</button>
+      <button data-view="settings" class="nav"><span class="nav-icon">⚙</span>兴趣设置</button>
+    </nav>
+    <div class="sidebar-note"><span class="tiny-line"></span><p>少一点信息噪声，<br>多一点值得阅读。</p><small>从你的关键词出发，<br>为新的发现留一点空间。</small></div>
+    <div class="local-status"><span class="status-dot"></span>本地运行<span>仅此电脑</span></div>
+  </aside>
+  <main>
+    <header class="topbar"><span id="breadcrumb">工作台 / 我的简报</span><span class="top-date" id="today"></span></header>
+    <div class="content">
+      <div id="connection-error" class="alert error" role="alert" hidden></div>
+      <section id="job-panel" class="job-panel" aria-live="polite" hidden></section>
+      <section id="view-briefing" class="view">
+        <div class="page-head"><div><div class="eyebrow">YOUR PERSONAL BRIEFING</div><h1>把注意力，留给值得的内容。</h1><p class="subtitle">从兴趣出发，发现有用的内容，也留一点意外收获。</p></div><div class="head-actions"><button id="preview" class="button secondary">仅采集预览</button><button id="generate" class="button primary">＋ 生成新简报</button></div></div>
+        <div class="context-strip"><span class="strip-label">正在关注</span><div id="keyword-chips" class="chips"></div><button class="text-button" data-view="settings">调整兴趣 <span>↗</span></button></div>
+        <div class="reading-layout"><div class="reading-main">
+          <div class="section-heading"><div><h2 id="briefing-heading">最新简报</h2><p id="briefing-meta" class="muted"></p></div><a id="download" class="text-button" hidden>导出 Markdown ↓</a></div>
+          <div id="briefing-body" aria-live="polite"><div class="empty"><div class="empty-symbol">▤</div><h2>正在读取你的简报…</h2></div></div>
+        </div><aside class="reading-aside">
+          <section class="side-section"><div class="eyebrow">RECOMMENDATION MIX</div><h3>熟悉的兴趣，新的发现</h3><div class="mix-bar" id="mix-bar"></div><div class="mix-labels"><span><i class="regular-dot"></i>常规 <b id="regular-count">—</b></span><span><i class="explore-dot"></i>探索 <b id="explore-count">—</b></span></div><p class="muted" id="mix-description">探索也来自相同关键词的候选，给不同主题、作者和形式一次机会。</p></section>
+          <section class="side-section"><div class="eyebrow">YOUR FEEDBACK MATTERS</div><h3>越用，越懂你的兴趣</h3><p class="muted">有用就留下一个反馈。暂时不想看，也不代表不喜欢。</p><div class="small-stat"><strong id="feedback-count">—</strong><span>条有效反馈</span></div><button class="text-button" data-view="preferences">查看后台学习 →</button></section>
+          <p class="source-note">内容概述依据 RSS 标题、简介与元数据生成，未读取视频或字幕。</p>
+        </aside></div>
+      </section>
+      <section id="view-history" class="view" hidden><div class="page-head"><div><div class="eyebrow">YOUR READING ARCHIVE</div><h1>每一次发现，都有迹可循。</h1><p class="subtitle">正式简报、采集预览与失败记录，保存在你的电脑里。</p></div><button id="refresh-history" class="button secondary">刷新记录</button></div><div id="history-body"></div></section>
+      <section id="view-preferences" class="view" hidden><div class="page-head"><div><div class="eyebrow">LEARNING AT YOUR PACE</div><h1>偏好慢慢学，兴趣由你定。</h1><p class="subtitle">系统自动汇总反馈；一次“不想看”，不会定义你的长期兴趣。</p></div></div><div id="preferences-body"></div></section>
+      <section id="view-settings" class="view" hidden><div class="page-head"><div><div class="eyebrow">MAKE IT YOURS</div><h1>告诉拾讯，你关心什么。</h1><p class="subtitle">关键词决定采集范围，兴趣描述帮助筛选真正相关的内容。</p></div></div>
+        <form id="settings-form" class="settings-form">
+          <section class="form-section"><div class="form-title"><span>01</span><div><h2>兴趣与来源</h2><p>只搜索你填写的关键词，不自动扩大范围。</p></div></div>
+            <label for="keywords">搜索关键词 <small>1–5 个，用逗号或换行分隔</small></label><input id="keywords" required maxlength="500" placeholder="LangGraph, Cursor">
+            <label for="interests">兴趣描述</label><textarea id="interests" rows="5" maxlength="10000" placeholder="你正在学习什么？希望找到什么类型的内容？"></textarea>
+            <p class="field-note">修改关键词、兴趣或时长上限会启用新的学习上下文，旧记录仍保留。</p>
+          </section>
+          <section class="form-section"><div class="form-title"><span>02</span><div><h2>简报偏好</h2><p>设置阅读量，为探索留出空间。</p></div></div><div class="field-grid">
+            <div><label for="max-picks">每份最多推荐</label><div class="unit-input"><input id="max-picks" type="number" min="1" max="10" required><span>条</span></div></div>
+            <div><label for="max-duration">单条时长上限</label><div class="unit-input"><input id="max-duration" type="number" min="0.016667" step="any" placeholder="不限"><span>分钟</span></div></div>
+            <div><label for="exploration">目标探索比例</label><div class="unit-input"><input id="exploration" type="number" min="0" max="100" step="any" required><span>%</span></div></div>
+            <div><label for="cooldown">重复推荐间隔</label><div class="unit-input"><input id="cooldown" type="number" min="0" step="any" required><span>天</span></div></div>
+          </div><p class="field-note">少于 5 条时不强制探索；候选不足时不凑数。设置时长上限后，未知时长的内容会被过滤。</p></section>
+          <section class="form-section"><div class="toggle-row"><div><h2>自动偏好学习</h2><p>本地计算，逐步调整常规推荐；不增加模型调用。</p></div><label class="switch"><input id="learning" type="checkbox" aria-label="开启自动偏好学习"><span></span></label></div></section>
+          <div class="save-row"><p id="settings-message" role="status"></p><button id="save-settings" class="button primary" type="submit">保存设置</button></div>
+        </form>
+      </section>
+      <footer>拾讯 · 让信息为你所用<span>本地存储 · 保留你的选择</span></footer>
+    </div>
+  </main>
+</div>
+<div id="toast" role="status" hidden></div>
+</body></html>

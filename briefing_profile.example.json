@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "profile_id": "default",
+  "rsshub_url": "http://127.0.0.1:1200",
+  "keywords": [
+    "LangGraph",
+    "Cursor"
+  ],
+  "interests": "关注 AI 辅助编程、工作流自动化及可复现的实践项目。",
+  "max_picks": 5,
+  "max_candidates": 60,
+  "max_duration_seconds": null,
+  "exploration_ratio": 0.2,
+  "history_cooldown_days": 14,
+  "snooze_days": 3,
+  "learning": {
+    "enabled": true,
+    "half_life_days": 60,
+    "max_score_adjustment": 5,
+    "max_rank_movement": 1,
+    "activation_min_videos": 3,
+    "activation_min_days": 3,
+    "activation_net": 1.5,
+    "activation_consistency": 0.7,
+    "daily_cap": 1,
+    "max_tags": 5,
+    "duration_buckets": [
+      300,
+      1200,
+      3600
+    ]
+  }
+}

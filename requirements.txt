@@ -1,0 +1,7 @@
+langgraph==1.2.11
+langchain-deepseek==1.1.0
+langchain-openai==1.6.2
+pydantic==2.13.5
+pydantic-settings==2.15.0
+python-dotenv==1.2.3
+pytest==9.1.1
