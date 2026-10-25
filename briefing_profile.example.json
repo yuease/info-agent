@@ -1,5 +1,5 @@
 {
-  "schema_version": 2,
+  "schema_version": 4,
   "profile_id": "default",
   "rsshub_url": "http://127.0.0.1:1200",
   "keywords": [
@@ -11,23 +11,95 @@
   "max_candidates": 60,
   "max_duration_seconds": null,
   "exploration_ratio": 0.2,
-  "history_cooldown_days": 14,
-  "snooze_days": 3,
+  "history_cooldown_days": 14.0,
+  "snooze_days": 3.0,
   "learning": {
     "enabled": true,
-    "half_life_days": 60,
-    "max_score_adjustment": 5,
+    "half_life_days": 60.0,
+    "max_score_adjustment": 5.0,
     "max_rank_movement": 1,
     "activation_min_videos": 3,
     "activation_min_days": 3,
     "activation_net": 1.5,
     "activation_consistency": 0.7,
-    "daily_cap": 1,
+    "daily_cap": 1.0,
     "max_tags": 5,
     "duration_buckets": [
       300,
       1200,
       3600
     ]
+  },
+  "rss_timeout_seconds": 15.0,
+  "source_plan": {
+    "keyword_search": {
+      "enabled": true
+    },
+    "ups": [
+      {
+        "uid": "123",
+        "enabled": false,
+        "scope": "both",
+        "content_type": "all"
+      }
+    ],
+    "following": {
+      "uid": "",
+      "enabled": false,
+      "scope": "videos",
+      "content_type": "all"
+    }
+  },
+  "filters": {
+    "rules": [
+      {
+        "id": "lottery",
+        "version": 1,
+        "enabled": true
+      },
+      {
+        "id": "advertisement",
+        "version": 1,
+        "enabled": true
+      }
+    ],
+    "blocked_ups": []
+  },
+  "collection": {
+    "enabled": false,
+    "interval_minutes": 60,
+    "dynamic_ttl_hours": 72,
+    "up_dynamic_batches": 3,
+    "max_requests": 48,
+    "max_seconds": 120,
+    "future_tolerance_seconds": 300
+  },
+  "interest_identity": null,
+  "agent_query": {
+    "max_candidates": 30,
+    "max_evidence": 8,
+    "max_page_size": 50,
+    "max_item_input_chars": 1200,
+    "max_input_chars": 18000,
+    "max_output_chars": 10000,
+    "max_snippet_chars": 400,
+    "max_body_chars": 8000,
+    "max_output_tokens": 2500,
+    "timeout_seconds": 45,
+    "cache_ttl_seconds": 900,
+    "temporary_max_keywords": 3,
+    "temporary_max_requests": 3,
+    "temporary_max_seconds": 20,
+    "temporary_max_items": 60,
+    "model_version": "configured-v1",
+    "aliases": {
+      "重置": [
+        "reset"
+      ],
+      "二创": [
+        "同人",
+        "手书"
+      ]
+    }
   }
 }

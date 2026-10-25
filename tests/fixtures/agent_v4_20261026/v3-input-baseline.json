@@ -1,0 +1,5297 @@
+{
+  "strategy_version": "agent-evidence-v3-explicit-terms-dedup",
+  "frozen_at": "2026-10-26T00:31:39.689826+08:00",
+  "mode": "retrieval_input_only",
+  "semantic_verdict": "not_evaluated_offline",
+  "cases": [
+    {
+      "number": 1,
+      "reference": {
+        "n": 1,
+        "q": "今天有没有二重螺旋希罗的二创更新？",
+        "terms": [
+          "二重螺旋",
+          "希罗"
+        ],
+        "time_range": {
+          "period": "today"
+        },
+        "expected": [],
+        "forbidden": [],
+        "expect": "no_match",
+        "note": "今天为10月26日；没有命中只能说明本次有限采样未找到。"
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "今天有没有二重螺旋希罗的二创更新？",
+        "terms": [
+          "二重螺旋",
+          "希罗"
+        ],
+        "time_range": {
+          "period": "today"
+        }
+      },
+      "search": {
+        "request_id": "73f7de1a2cc741f9b90412b5ad6a1050",
+        "outcome": "no_match",
+        "items": [],
+        "total_matches": 0,
+        "page": 1,
+        "has_more": false,
+        "truncated": false,
+        "retrieval_terms": [
+          "二重螺旋",
+          "希罗"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": "2026-10-26T00:00:00+08:00",
+          "end": "2026-10-27T00:00:00+08:00",
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.01600000000325963,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "89f3b1552b15bdcf7ddf055bc1985cca7a48ac97bb801fa4a8e587c6f66caeef",
+        "next_page": null
+      },
+      "manual_review_required": true,
+      "input_items": [],
+      "input_truncated": false,
+      "input_chars": 566,
+      "input_real_ids": []
+    },
+    {
+      "number": 2,
+      "reference": {
+        "n": 2,
+        "q": "不限日期，搜到的希罗内容真的是二重螺旋角色相关吗？请只给出游戏角色相关内容。",
+        "terms": [
+          "二重螺旋",
+          "希罗"
+        ],
+        "expected": [],
+        "forbidden": [
+          "9520c761d4254da6596b"
+        ],
+        "expect": "insufficient_evidence",
+        "note": "篮球卡内容虽然同时含希罗和活动标签，不是游戏角色内容，应排除。"
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "不限日期，搜到的希罗内容真的是二重螺旋角色相关吗？请只给出游戏角色相关内容。",
+        "terms": [
+          "二重螺旋",
+          "希罗"
+        ]
+      },
+      "search": {
+        "request_id": "334064c189bc4d5dad51f910b9ade21b",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "9520c761d4254da6596b",
+            "title": "球星卡分享，韦尔值得入手吗？",
+            "snippet": "二重螺旋公测创作者激励计划",
+            "author": "泡芙和霍小德",
+            "author_uid": "358499272",
+            "published_at": "2025-12-09T11:20:25+00:00",
+            "matched_published_at": "2025-12-09T11:20:25+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av115689323044526",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2025-12-09T11:20:25+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av115689323044526",
+                "author": "泡芙和霍小德",
+                "author_uid": "358499272"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "13ac5f753a687769bfff7092",
+              "field": "tags[3]",
+              "start": 0,
+              "end": 13,
+              "text": "二重螺旋公测创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2025-12-09T11:20:25+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av115689323044526",
+                "author": "泡芙和霍小德",
+                "author_uid": "358499272"
+              }
+            }
+          }
+        ],
+        "total_matches": 1,
+        "page": 1,
+        "has_more": false,
+        "truncated": true,
+        "retrieval_terms": [
+          "二重螺旋",
+          "希罗"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": null,
+          "end": null,
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.014999999999417923,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "90654c86b005ca475ebd0df34d58e3e157f29fb984128dba5f0faa4f80c575b3",
+        "next_page": null
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "9520c761d4254da6596b",
+          "title": "球星卡分享，韦尔值得入手吗？",
+          "text": "二重螺旋公测创作者激励计划",
+          "spans": [
+            {
+              "id": "13ac5f753a687769bfff7092",
+              "field": "tags[3]",
+              "start": 0,
+              "end": 13,
+              "text": "二重螺旋公测创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2025-12-09T11:20:25+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av115689323044526",
+                "author": "泡芙和霍小德",
+                "author_uid": "358499272"
+              }
+            },
+            {
+              "id": "e6270ec4ff8fbec510198fd3",
+              "field": "tags[7]",
+              "start": 0,
+              "end": 2,
+              "text": "希罗",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2025-12-09T11:20:25+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av115689323044526",
+                "author": "泡芙和霍小德",
+                "author_uid": "358499272"
+              }
+            }
+          ],
+          "author": "泡芙和霍小德",
+          "published_at": "2025-12-09T11:20:25+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 1536,
+      "input_real_ids": [
+        "9520c761d4254da6596b"
+      ]
+    },
+    {
+      "number": 3,
+      "reference": {
+        "n": 3,
+        "q": "昨天有没有二重螺旋1.7的入坑或回坑指南？",
+        "terms": [
+          "二重螺旋",
+          "1.7"
+        ],
+        "time_range": {
+          "start": "2026-10-25",
+          "end": "2026-10-26",
+          "timezone": "Asia/Shanghai"
+        },
+        "expected": [
+          "f234ce395819c14579bf",
+          "886fdcd00cf441669b27"
+        ],
+        "forbidden": [],
+        "expect": "found",
+        "note": "允许找到其中一条；不要把纯刷图实战都当作入坑指南。"
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "昨天有没有二重螺旋1.7的入坑或回坑指南？",
+        "terms": [
+          "二重螺旋",
+          "1.7"
+        ],
+        "time_range": {
+          "start": "2026-10-25",
+          "end": "2026-10-26",
+          "timezone": "Asia/Shanghai"
+        }
+      },
+      "search": {
+        "request_id": "25a3049d6a9b452dbb50b77c57c18bbb",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "04c9911138d9507ad671",
+            "title": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+            "snippet": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+            "author": "仇小乐",
+            "author_uid": "324198218",
+            "published_at": "2026-10-25T13:11:26+00:00",
+            "matched_published_at": "2026-10-25T13:11:26+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117501664954043",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              },
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "24cbf50d5362a0ae599296e6",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            }
+          },
+          {
+            "id": "82721bf0b7d77dcdd86c",
+            "title": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+            "snippet": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+            "author": "GTEW的游戏小仓库",
+            "author_uid": "4504907",
+            "published_at": "2026-10-25T10:01:36+00:00",
+            "matched_published_at": "2026-10-25T10:01:36+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117500960374873",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              },
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "9276c3a64a4c139ff68f0c2e",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            }
+          },
+          {
+            "id": "cf7d8aab7916ac488445",
+            "title": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+            "snippet": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+            "author": "GTEW的游戏小仓库",
+            "author_uid": "4504907",
+            "published_at": "2026-10-25T09:50:04+00:00",
+            "matched_published_at": "2026-10-25T09:50:04+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117500910177188",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              },
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "96f7572b1b8f98fe42e1c809",
+              "field": "title",
+              "start": 0,
+              "end": 29,
+              "text": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            }
+          },
+          {
+            "id": "f234ce395819c14579bf",
+            "title": "1.7入坑指南，二重真的要火？【二重螺旋】",
+            "snippet": "1.7入坑指南，二重真的要火？【二重螺旋】",
+            "author": "老顾不烦",
+            "author_uid": "240650947",
+            "published_at": "2026-10-25T08:15:49+00:00",
+            "matched_published_at": "2026-10-25T08:15:49+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117500524105143",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              },
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "47ae917c8898b6511cd5e5fc",
+              "field": "title",
+              "start": 0,
+              "end": 21,
+              "text": "1.7入坑指南，二重真的要火？【二重螺旋】",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              }
+            }
+          },
+          {
+            "id": "92b9467f03e224b9da89",
+            "title": "【二重螺旋1.7】没灾厄武器刷灾厄，止流速刷分享",
+            "snippet": "【二重螺旋1.7】没灾厄武器刷灾厄，止流速刷分享",
+            "author": "超耐久黎宝",
+            "author_uid": "38783642",
+            "published_at": "2026-10-25T07:22:03+00:00",
+            "matched_published_at": "2026-10-25T07:22:03+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117500272445983",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T07:22:03+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500272445983",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "30d283b69040b84505e522ae",
+              "field": "title",
+              "start": 0,
+              "end": 24,
+              "text": "【二重螺旋1.7】没灾厄武器刷灾厄，止流速刷分享",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T07:22:03+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500272445983",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            }
+          }
+        ],
+        "total_matches": 8,
+        "page": 1,
+        "has_more": true,
+        "truncated": true,
+        "retrieval_terms": [
+          "二重螺旋",
+          "1.7"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": "2026-10-25T00:00:00+08:00",
+          "end": "2026-10-26T00:00:00+08:00",
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.01600000000325963,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "7b31a16e5d81cfc98c85a4e9ed1103b3d4282ecb34971d3b43169b8f745c440d",
+        "next_page": 2
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "04c9911138d9507ad671",
+          "title": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+          "text": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+          "spans": [
+            {
+              "id": "24cbf50d5362a0ae599296e6",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            },
+            {
+              "id": "81554675dce7ad687d73ba75",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            },
+            {
+              "id": "2bb15a81625a4c4b19c24cca",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            },
+            {
+              "id": "5efc469aee3c4802de149b83",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            },
+            {
+              "id": "b23abce1a2c04ad526b6b809",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            },
+            {
+              "id": "a0dcb53e0fba9a623e697e1a",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            }
+          ],
+          "author": "仇小乐",
+          "published_at": "2026-10-25T13:11:26+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "82721bf0b7d77dcdd86c",
+          "title": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+          "text": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+          "spans": [
+            {
+              "id": "9276c3a64a4c139ff68f0c2e",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "c2ac4ca908318207d16f03c1",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "64cd65f849464b6dc2502c7d",
+              "field": "tags[5]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "13367f18e617268326bdbf0c",
+              "field": "tags[8]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "49bc8dbebb196e6c10b4c800",
+              "field": "tags[5]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "ed737677d9ca224671a1c356",
+              "field": "tags[8]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            }
+          ],
+          "author": "GTEW的游戏小仓库",
+          "published_at": "2026-10-25T10:01:36+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "cf7d8aab7916ac488445",
+          "title": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+          "text": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+          "spans": [
+            {
+              "id": "96f7572b1b8f98fe42e1c809",
+              "field": "title",
+              "start": 0,
+              "end": 29,
+              "text": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "582ed0113fb465e4f168dfa0",
+              "field": "title",
+              "start": 0,
+              "end": 29,
+              "text": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "fc871ba19de9cbe0451148d2",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "2376d3e8d6a7ccf977f67cea",
+              "field": "tags[8]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "6d01508b0d4b2fc869b7432a",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "99a6adfca40810cdb150eca2",
+              "field": "tags[8]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            }
+          ],
+          "author": "GTEW的游戏小仓库",
+          "published_at": "2026-10-25T09:50:04+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "f234ce395819c14579bf",
+          "title": "1.7入坑指南，二重真的要火？【二重螺旋】",
+          "text": "1.7入坑指南，二重真的要火？【二重螺旋】",
+          "spans": [
+            {
+              "id": "47ae917c8898b6511cd5e5fc",
+              "field": "title",
+              "start": 0,
+              "end": 21,
+              "text": "1.7入坑指南，二重真的要火？【二重螺旋】",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              }
+            },
+            {
+              "id": "a60f095b8ff5e84b5de670b9",
+              "field": "title",
+              "start": 0,
+              "end": 21,
+              "text": "1.7入坑指南，二重真的要火？【二重螺旋】",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              }
+            },
+            {
+              "id": "e7cf64666b761118e7e16cfc",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              }
+            },
+            {
+              "id": "b94cbd8defaa2c46f8c215f2",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 5,
+              "text": "1.7版本",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              }
+            },
+            {
+              "id": "2394fed2e41a90837581ed19",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              }
+            },
+            {
+              "id": "a8d127da48a1b88b6225ce1d",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              }
+            },
+            {
+              "id": "9a325bd74d640749b528e7bb",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 5,
+              "text": "1.7版本",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              }
+            },
+            {
+              "id": "6e7b3f254bd625f5e2e731e4",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T08:15:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500524105143",
+                "author": "老顾不烦",
+                "author_uid": "240650947"
+              }
+            }
+          ],
+          "author": "老顾不烦",
+          "published_at": "2026-10-25T08:15:49+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "92b9467f03e224b9da89",
+          "title": "【二重螺旋1.7】没灾厄武器刷灾厄，止流速刷分享",
+          "text": "【二重螺旋1.7】没灾厄武器刷灾厄，止流速刷分享",
+          "spans": [
+            {
+              "id": "30d283b69040b84505e522ae",
+              "field": "title",
+              "start": 0,
+              "end": 24,
+              "text": "【二重螺旋1.7】没灾厄武器刷灾厄，止流速刷分享",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T07:22:03+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500272445983",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            },
+            {
+              "id": "432b5ce26e988031653383a8",
+              "field": "tags[7]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T07:22:03+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500272445983",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            }
+          ],
+          "author": "超耐久黎宝",
+          "published_at": "2026-10-25T07:22:03+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "886fdcd00cf441669b27",
+          "title": "【二重螺旋】1.7值不值得回坑？一个视频找回狩月的意义！",
+          "text": "【二重螺旋】1.7值不值得回坑？一个视频找回狩月的意义！",
+          "spans": [
+            {
+              "id": "7b0aeb23010c356a2bcb4697",
+              "field": "title",
+              "start": 0,
+              "end": 28,
+              "text": "【二重螺旋】1.7值不值得回坑？一个视频找回狩月的意义！",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T03:03:56+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117496665348282",
+                "author": "乐观的四十七",
+                "author_uid": "425688"
+              }
+            },
+            {
+              "id": "0aceebd52f66462d3483ed3d",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 10,
+              "text": "二重螺旋行于破晓版本",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T03:03:56+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117496665348282",
+                "author": "乐观的四十七",
+                "author_uid": "425688"
+              }
+            },
+            {
+              "id": "3004d42f71f72dc64e0274b1",
+              "field": "tags[5]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T03:03:56+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117496665348282",
+                "author": "乐观的四十七",
+                "author_uid": "425688"
+              }
+            }
+          ],
+          "author": "乐观的四十七",
+          "published_at": "2026-10-25T03:03:56+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "d631f488335d46947e13",
+          "title": "【二重螺旋1.7】一个叫黎瑟的女孩儿决定去活",
+          "text": "【二重螺旋1.7】一个叫黎瑟的女孩儿决定去活",
+          "spans": [
+            {
+              "id": "01ac3e461ee4ea2332648834",
+              "field": "title",
+              "start": 0,
+              "end": 22,
+              "text": "【二重螺旋1.7】一个叫黎瑟的女孩儿决定去活",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T02:30:00+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117495927147634",
+                "author": "鹦鹉不咕",
+                "author_uid": "478744"
+              }
+            },
+            {
+              "id": "b7a2438cd0a6fe75eaec7392",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 10,
+              "text": "二重螺旋行于破晓版本",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T02:30:00+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117495927147634",
+                "author": "鹦鹉不咕",
+                "author_uid": "478744"
+              }
+            },
+            {
+              "id": "d55c7c5b3c26e2bc62ac81bf",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 6,
+              "text": "二重螺旋黎瑟",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T02:30:00+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117495927147634",
+                "author": "鹦鹉不咕",
+                "author_uid": "478744"
+              }
+            },
+            {
+              "id": "a700f173b895b19349afb4d4",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T02:30:00+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117495927147634",
+                "author": "鹦鹉不咕",
+                "author_uid": "478744"
+              }
+            }
+          ],
+          "author": "鹦鹉不咕",
+          "published_at": "2026-10-25T02:30:00+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "cd8aeba14ff052bdb78f",
+          "title": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+          "text": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+          "spans": [
+            {
+              "id": "26426fdf88af594c182c8557",
+              "field": "title",
+              "start": 0,
+              "end": 30,
+              "text": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-24T21:19:02+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117497923635149",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            },
+            {
+              "id": "61b3fa36250356cc119530f2",
+              "field": "tags[6]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-24T21:19:02+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117497923635149",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            }
+          ],
+          "author": "超耐久黎宝",
+          "published_at": "2026-10-24T21:19:02+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 16225,
+      "input_real_ids": [
+        "04c9911138d9507ad671",
+        "82721bf0b7d77dcdd86c",
+        "cf7d8aab7916ac488445",
+        "f234ce395819c14579bf",
+        "92b9467f03e224b9da89",
+        "886fdcd00cf441669b27",
+        "d631f488335d46947e13",
+        "cd8aeba14ff052bdb78f"
+      ]
+    },
+    {
+      "number": 4,
+      "reference": {
+        "n": 4,
+        "q": "找一个不超过5分钟的二重螺旋止流速刷实战视频。",
+        "terms": [
+          "止流",
+          "速刷"
+        ],
+        "max_duration_seconds": 300,
+        "expected": [
+          "cd8aeba14ff052bdb78f"
+        ],
+        "forbidden": [
+          "92b9467f03e224b9da89"
+        ],
+        "expect": "found",
+        "note": "224秒的视频合格；314秒视频不能返回。标题1分58秒是实战描述，不等于视频时长。"
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "找一个不超过5分钟的二重螺旋止流速刷实战视频。",
+        "terms": [
+          "止流",
+          "速刷"
+        ],
+        "max_duration_seconds": 300
+      },
+      "search": {
+        "request_id": "bfe59da27b3d4ff5b2afd59f0e7a4f85",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "cd8aeba14ff052bdb78f",
+            "title": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+            "snippet": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+            "author": "超耐久黎宝",
+            "author_uid": "38783642",
+            "published_at": "2026-10-24T21:19:02+00:00",
+            "matched_published_at": "2026-10-24T21:19:02+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117497923635149",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-24T21:19:02+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117497923635149",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "26426fdf88af594c182c8557",
+              "field": "title",
+              "start": 0,
+              "end": 30,
+              "text": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-24T21:19:02+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117497923635149",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            }
+          }
+        ],
+        "total_matches": 1,
+        "page": 1,
+        "has_more": false,
+        "truncated": true,
+        "retrieval_terms": [
+          "止流",
+          "速刷"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": null,
+          "end": null,
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.015999999988707714,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "559b094c4806a270864a74378b9274185c495ce40cccf7dea73f2a154e936610",
+        "next_page": null
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "cd8aeba14ff052bdb78f",
+          "title": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+          "text": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+          "spans": [
+            {
+              "id": "26426fdf88af594c182c8557",
+              "field": "title",
+              "start": 0,
+              "end": 30,
+              "text": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-24T21:19:02+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117497923635149",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            },
+            {
+              "id": "92d77d1dd098d37f37caf1ad",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "止流速刷",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-24T21:19:02+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117497923635149",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            },
+            {
+              "id": "a6d17cd753f750eb34d2d4d7",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 6,
+              "text": "止流输出手法",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-24T21:19:02+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117497923635149",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            },
+            {
+              "id": "7965bafa95fa87022efedccf",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 4,
+              "text": "止流七溯",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-24T21:19:02+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117497923635149",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            },
+            {
+              "id": "e61589cca90a7faeabecda80",
+              "field": "tags[3]",
+              "start": 0,
+              "end": 4,
+              "text": "止流7溯",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-24T21:19:02+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117497923635149",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            },
+            {
+              "id": "4bb93202499c7dfd49ac3cdd",
+              "field": "tags[5]",
+              "start": 0,
+              "end": 5,
+              "text": "止流魔之楔",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-24T21:19:02+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117497923635149",
+                "author": "超耐久黎宝",
+                "author_uid": "38783642"
+              }
+            }
+          ],
+          "author": "超耐久黎宝",
+          "published_at": "2026-10-24T21:19:02+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 2993,
+      "input_real_ids": [
+        "cd8aeba14ff052bdb78f"
+      ]
+    },
+    {
+      "number": 5,
+      "reference": {
+        "n": 5,
+        "q": "有没有讲二重螺旋1.7魔之楔副本改动、刷取窍门的内容？",
+        "terms": [
+          "二重螺旋",
+          "刷取",
+          "改动"
+        ],
+        "expected": [
+          "82721bf0b7d77dcdd86c"
+        ],
+        "forbidden": [],
+        "expect": "found",
+        "note": "标题可支持存在此主题视频，不能编出视频中未提供的刷取方法。"
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "有没有讲二重螺旋1.7魔之楔副本改动、刷取窍门的内容？",
+        "terms": [
+          "二重螺旋",
+          "刷取",
+          "改动"
+        ]
+      },
+      "search": {
+        "request_id": "7d924ac091584120b8e65c3de2ee8989",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "82721bf0b7d77dcdd86c",
+            "title": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+            "snippet": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+            "author": "GTEW的游戏小仓库",
+            "author_uid": "4504907",
+            "published_at": "2026-10-25T10:01:36+00:00",
+            "matched_published_at": "2026-10-25T10:01:36+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117500960374873",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              },
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "9276c3a64a4c139ff68f0c2e",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            }
+          }
+        ],
+        "total_matches": 1,
+        "page": 1,
+        "has_more": false,
+        "truncated": true,
+        "retrieval_terms": [
+          "二重螺旋",
+          "刷取",
+          "改动"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": null,
+          "end": null,
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.014999999999417923,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "7f3a3516be99345de3bc7c498c61eeba7c667ec6cca3649b1cb594e598b0a37b",
+        "next_page": null
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "82721bf0b7d77dcdd86c",
+          "title": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+          "text": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+          "spans": [
+            {
+              "id": "9276c3a64a4c139ff68f0c2e",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "c2ac4ca908318207d16f03c1",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "dcc3be816bfeb8344d54357f",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 5,
+              "text": "mod刷取",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "64cd65f849464b6dc2502c7d",
+              "field": "tags[5]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "13367f18e617268326bdbf0c",
+              "field": "tags[8]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "0fb85528549b3c5488c7c6e0",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 5,
+              "text": "mod刷取",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "49bc8dbebb196e6c10b4c800",
+              "field": "tags[5]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "ed737677d9ca224671a1c356",
+              "field": "tags[8]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            }
+          ],
+          "author": "GTEW的游戏小仓库",
+          "published_at": "2026-10-25T10:01:36+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 3828,
+      "input_real_ids": [
+        "82721bf0b7d77dcdd86c"
+      ]
+    },
+    {
+      "number": 6,
+      "reference": {
+        "n": 6,
+        "q": "有没有二重螺旋黎瑟皮肤特效和染色展示？",
+        "terms": [
+          "黎瑟",
+          "染色"
+        ],
+        "expected": [
+          "d4fe08c18d8312db366b"
+        ],
+        "forbidden": [],
+        "expect": "found",
+        "note": "标题可支持展示主题；不能描述实际颜色、画面或值得升级的结论。"
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "有没有二重螺旋黎瑟皮肤特效和染色展示？",
+        "terms": [
+          "黎瑟",
+          "染色"
+        ]
+      },
+      "search": {
+        "request_id": "8aa44437f4b24bd0b922ed80cb097d6b",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "d4fe08c18d8312db366b",
+            "title": "【二重螺旋】黎瑟万华皮肤值得升级吗？结丝夜行特效展示+三套染色搭配",
+            "snippet": "【二重螺旋】黎瑟万华皮肤值得升级吗？结丝夜行特效展示+三套染色搭配",
+            "author": "螺旋中枢",
+            "author_uid": "3546904627513999",
+            "published_at": "2026-10-25T09:21:37+00:00",
+            "matched_published_at": "2026-10-25T09:21:37+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117500792543987",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:21:37+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500792543987",
+                "author": "螺旋中枢",
+                "author_uid": "3546904627513999"
+              },
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:21:37+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500792543987",
+                "author": "螺旋中枢",
+                "author_uid": "3546904627513999"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "0d4abe72a344bc208ecb095f",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "【二重螺旋】黎瑟万华皮肤值得升级吗？结丝夜行特效展示+三套染色搭配",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:21:37+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500792543987",
+                "author": "螺旋中枢",
+                "author_uid": "3546904627513999"
+              }
+            }
+          }
+        ],
+        "total_matches": 1,
+        "page": 1,
+        "has_more": false,
+        "truncated": true,
+        "retrieval_terms": [
+          "黎瑟",
+          "染色"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": null,
+          "end": null,
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.0,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "2116993c87d15d11b58ee2c33c95ce8256738cb8ee85aaa9b19eac3c561c82bf",
+        "next_page": null
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "d4fe08c18d8312db366b",
+          "title": "【二重螺旋】黎瑟万华皮肤值得升级吗？结丝夜行特效展示+三套染色搭配",
+          "text": "【二重螺旋】黎瑟万华皮肤值得升级吗？结丝夜行特效展示+三套染色搭配",
+          "spans": [
+            {
+              "id": "0d4abe72a344bc208ecb095f",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "【二重螺旋】黎瑟万华皮肤值得升级吗？结丝夜行特效展示+三套染色搭配",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:21:37+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500792543987",
+                "author": "螺旋中枢",
+                "author_uid": "3546904627513999"
+              }
+            },
+            {
+              "id": "c6ffe87174fbe15288949d95",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "【二重螺旋】黎瑟万华皮肤值得升级吗？结丝夜行特效展示+三套染色搭配",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:21:37+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500792543987",
+                "author": "螺旋中枢",
+                "author_uid": "3546904627513999"
+              }
+            }
+          ],
+          "author": "螺旋中枢",
+          "published_at": "2026-10-25T09:21:37+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 1606,
+      "input_real_ids": [
+        "d4fe08c18d8312db366b"
+      ]
+    },
+    {
+      "number": 7,
+      "reference": {
+        "n": 7,
+        "q": "那条二重螺旋最强雷队、灾厄200层视频标题提到了哪些角色？能据此认定是最强队伍吗？",
+        "terms": [
+          "二重螺旋",
+          "200"
+        ],
+        "expected": [
+          "04c9911138d9507ad671"
+        ],
+        "forbidden": [],
+        "expect": "found",
+        "note": "只可转述标题列出黎瑟、煜明、扶疏；最强为作者主张，不能独立确认。"
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "那条二重螺旋最强雷队、灾厄200层视频标题提到了哪些角色？能据此认定是最强队伍吗？",
+        "terms": [
+          "二重螺旋",
+          "200"
+        ]
+      },
+      "search": {
+        "request_id": "90085b17e55e4366a4d62ced8a58cef8",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "04c9911138d9507ad671",
+            "title": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+            "snippet": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+            "author": "仇小乐",
+            "author_uid": "324198218",
+            "published_at": "2026-10-25T13:11:26+00:00",
+            "matched_published_at": "2026-10-25T13:11:26+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117501664954043",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              },
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "24cbf50d5362a0ae599296e6",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            }
+          }
+        ],
+        "total_matches": 1,
+        "page": 1,
+        "has_more": false,
+        "truncated": true,
+        "retrieval_terms": [
+          "二重螺旋",
+          "200"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": null,
+          "end": null,
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.014999999999417923,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "04d26aba535b284a52f926ef4534cd8af5e81df7721268a1bc0768a15b6ac49d",
+        "next_page": null
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "04c9911138d9507ad671",
+          "title": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+          "text": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+          "spans": [
+            {
+              "id": "24cbf50d5362a0ae599296e6",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            },
+            {
+              "id": "81554675dce7ad687d73ba75",
+              "field": "title",
+              "start": 0,
+              "end": 33,
+              "text": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            },
+            {
+              "id": "2bb15a81625a4c4b19c24cca",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            },
+            {
+              "id": "5efc469aee3c4802de149b83",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            },
+            {
+              "id": "b23abce1a2c04ad526b6b809",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            },
+            {
+              "id": "a0dcb53e0fba9a623e697e1a",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T13:11:26+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117501664954043",
+                "author": "仇小乐",
+                "author_uid": "324198218"
+              }
+            }
+          ],
+          "author": "仇小乐",
+          "published_at": "2026-10-25T13:11:26+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 3071,
+      "input_real_ids": [
+        "04c9911138d9507ad671"
+      ]
+    },
+    {
+      "number": 8,
+      "reference": {
+        "n": 8,
+        "q": "苏乙《JUMP》二创的动作和场景分别署名给谁？",
+        "terms": [
+          "苏乙",
+          "JUMP"
+        ],
+        "expected": [
+          "d92bf4e9d501809a03cf"
+        ],
+        "forbidden": [],
+        "expect": "found",
+        "note": "存储正文明确署名动作NatsumiSan、场景ChyetYi；应提供这段证据，只有标题不足。",
+        "required_quotes": [
+          "NatsumiSan",
+          "ChyetYi"
+        ]
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "苏乙《JUMP》二创的动作和场景分别署名给谁？",
+        "terms": [
+          "苏乙",
+          "JUMP"
+        ]
+      },
+      "search": {
+        "request_id": "7b2fd39d1f514294b0ea840e776bd8b0",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "d92bf4e9d501809a03cf",
+            "title": "【苏乙】BLACKPINK - JUMP",
+            "snippet": "【苏乙】BLACKPINK - JUMP",
+            "author": "絳色",
+            "author_uid": "189035137",
+            "published_at": "2026-10-19T11:32:46+00:00",
+            "matched_published_at": "2026-10-19T11:32:46+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117467338771007",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-19T11:32:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117467338771007",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "1edbcc87de4e5030d6072fb9",
+              "field": "title",
+              "start": 0,
+              "end": 20,
+              "text": "【苏乙】BLACKPINK - JUMP",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-19T11:32:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117467338771007",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            }
+          }
+        ],
+        "total_matches": 1,
+        "page": 1,
+        "has_more": false,
+        "truncated": true,
+        "retrieval_terms": [
+          "苏乙",
+          "jump"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": null,
+          "end": null,
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.01600000000325963,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "d7c9184db682c312088ac9c86057ff88f427bc47ae7f29209c95fcffb4a44b0e",
+        "next_page": null
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "d92bf4e9d501809a03cf",
+          "title": "【苏乙】BLACKPINK - JUMP",
+          "text": "【苏乙】BLACKPINK - JUMP",
+          "spans": [
+            {
+              "id": "1edbcc87de4e5030d6072fb9",
+              "field": "title",
+              "start": 0,
+              "end": 20,
+              "text": "【苏乙】BLACKPINK - JUMP",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-19T11:32:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117467338771007",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            },
+            {
+              "id": "9d2bd264b36ff7714c757048",
+              "field": "tags[5]",
+              "start": 0,
+              "end": 2,
+              "text": "苏乙",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-19T11:32:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117467338771007",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            }
+          ],
+          "author": "絳色",
+          "published_at": "2026-10-19T11:32:46+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 1527,
+      "input_real_ids": [
+        "d92bf4e9d501809a03cf"
+      ]
+    },
+    {
+      "number": 9,
+      "reference": {
+        "n": 9,
+        "q": "找不超过1分钟的二重螺旋法露茜二创。",
+        "terms": [
+          "二重螺旋",
+          "法露茜"
+        ],
+        "max_duration_seconds": 60,
+        "expected": [
+          "16b4fba3e45fb434a540",
+          "d1ebd7e15357f92934de"
+        ],
+        "forbidden": [
+          "e3b38e994d943e5a6eba"
+        ],
+        "expect": "found",
+        "note": "33秒和43秒符合；185秒不符合。允许明确说明主要依据标签。"
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "找不超过1分钟的二重螺旋法露茜二创。",
+        "terms": [
+          "二重螺旋",
+          "法露茜"
+        ],
+        "max_duration_seconds": 60
+      },
+      "search": {
+        "request_id": "34989de504d247a2a67356507558b57c",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "16b4fba3e45fb434a540",
+            "title": "法露茜的假日",
+            "snippet": "法露茜的假日",
+            "author": "何丶以笙",
+            "author_uid": "17755830",
+            "published_at": "2026-10-18T12:14:27+00:00",
+            "matched_published_at": "2026-10-18T12:14:27+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117461852619028",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "c1d16db2b97a540a9bcef641",
+              "field": "title",
+              "start": 0,
+              "end": 6,
+              "text": "法露茜的假日",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            }
+          },
+          {
+            "id": "d1ebd7e15357f92934de",
+            "title": "这嘴子吃着不烧心",
+            "snippet": "二重螺旋第22只乐园的白兔二创",
+            "author": "冰离°",
+            "author_uid": "22190551",
+            "published_at": "2026-10-18T09:38:46+00:00",
+            "matched_published_at": "2026-10-18T09:38:46+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117461231932825",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T09:38:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461231932825",
+                "author": "冰离°",
+                "author_uid": "22190551"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "ef19a84b935737e1f68600df",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T09:38:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461231932825",
+                "author": "冰离°",
+                "author_uid": "22190551"
+              }
+            }
+          }
+        ],
+        "total_matches": 2,
+        "page": 1,
+        "has_more": false,
+        "truncated": true,
+        "retrieval_terms": [
+          "二重螺旋",
+          "法露茜"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": null,
+          "end": null,
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.0,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "a26ef3ecfc4ce338cb1a5064a3b1b51f3b8475ea5e32540534d2281180d316d0",
+        "next_page": null
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "16b4fba3e45fb434a540",
+          "title": "法露茜的假日",
+          "text": "法露茜的假日",
+          "spans": [
+            {
+              "id": "c1d16db2b97a540a9bcef641",
+              "field": "title",
+              "start": 0,
+              "end": 6,
+              "text": "法露茜的假日",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            },
+            {
+              "id": "be180b43dc2007f9bd3e0623",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            },
+            {
+              "id": "c24c8aea640ba15b69fbac2f",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 3,
+              "text": "法露茜",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            },
+            {
+              "id": "48c896fc5b3f18972bf234e6",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            }
+          ],
+          "author": "何丶以笙",
+          "published_at": "2026-10-18T12:14:27+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "d1ebd7e15357f92934de",
+          "title": "这嘴子吃着不烧心",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "ef19a84b935737e1f68600df",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T09:38:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461231932825",
+                "author": "冰离°",
+                "author_uid": "22190551"
+              }
+            },
+            {
+              "id": "87a9954ba8e55922f6eab77b",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 3,
+              "text": "法露茜",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T09:38:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461231932825",
+                "author": "冰离°",
+                "author_uid": "22190551"
+              }
+            },
+            {
+              "id": "02a61086e21a9041f05c9f1a",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T09:38:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461231932825",
+                "author": "冰离°",
+                "author_uid": "22190551"
+              }
+            }
+          ],
+          "author": "冰离°",
+          "published_at": "2026-10-18T09:38:46+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 3526,
+      "input_real_ids": [
+        "16b4fba3e45fb434a540",
+        "d1ebd7e15357f92934de"
+      ]
+    },
+    {
+      "number": 10,
+      "reference": {
+        "n": 10,
+        "q": "最近十天有哪些二重螺旋二创？排除仅挂活动标签的影视、篮球和其他游戏内容。",
+        "terms": [
+          "二重螺旋",
+          "二创"
+        ],
+        "time_range": {
+          "start": "2026-10-17",
+          "end": "2026-10-27",
+          "timezone": "Asia/Shanghai"
+        },
+        "expected": [
+          "d92bf4e9d501809a03cf",
+          "aa5ac77e7e65e523d681",
+          "16b4fba3e45fb434a540",
+          "d1ebd7e15357f92934de",
+          "e3b38e994d943e5a6eba",
+          "83ec4fd8812632720ad8"
+        ],
+        "forbidden": [
+          "23f433c297a87c181bdd",
+          "e3c76187ac18e8be666d",
+          "ed13b3a9948e96e98087",
+          "01d853c2c705ed558fac",
+          "869cc732635d1903b882",
+          "1eadf15f4fb01b5d4430",
+          "5169cdff77c0dbe73b51"
+        ],
+        "expect": "found",
+        "note": "不要求返回全部；不能因为活动标签就把影视剪辑或Warframe当二重螺旋二创。"
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "最近十天有哪些二重螺旋二创？排除仅挂活动标签的影视、篮球和其他游戏内容。",
+        "terms": [
+          "二重螺旋",
+          "二创"
+        ],
+        "time_range": {
+          "start": "2026-10-17",
+          "end": "2026-10-27",
+          "timezone": "Asia/Shanghai"
+        }
+      },
+      "search": {
+        "request_id": "c2cc4fffb6a64ec487fc018e89b00120",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "aa5ac77e7e65e523d681",
+            "title": "◉⩌◉隔壁班来了个皎皎！大家都扭不过她！『理理我嘛』【二重螺旋】",
+            "snippet": "二重螺旋第22只乐园的白兔二创",
+            "author": "春日野悠闲",
+            "author_uid": "176809329",
+            "published_at": "2026-10-18T13:46:38+00:00",
+            "matched_published_at": "2026-10-18T13:46:38+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117462205008552",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T13:46:38+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117462205008552",
+                "author": "春日野悠闲",
+                "author_uid": "176809329"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "d772e2431113e2504ea78dda",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T13:46:38+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117462205008552",
+                "author": "春日野悠闲",
+                "author_uid": "176809329"
+              }
+            }
+          },
+          {
+            "id": "d92bf4e9d501809a03cf",
+            "title": "【苏乙】BLACKPINK - JUMP",
+            "snippet": "二重螺旋第22只乐园的白兔二创",
+            "author": "絳色",
+            "author_uid": "189035137",
+            "published_at": "2026-10-19T11:32:46+00:00",
+            "matched_published_at": "2026-10-19T11:32:46+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117467338771007",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-19T11:32:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117467338771007",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "4390242ec2b9ac87e1317388",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-19T11:32:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117467338771007",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            }
+          },
+          {
+            "id": "16b4fba3e45fb434a540",
+            "title": "法露茜的假日",
+            "snippet": "二重螺旋第22只乐园的白兔二创",
+            "author": "何丶以笙",
+            "author_uid": "17755830",
+            "published_at": "2026-10-18T12:14:27+00:00",
+            "matched_published_at": "2026-10-18T12:14:27+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117461852619028",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "be180b43dc2007f9bd3e0623",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            }
+          },
+          {
+            "id": "d1ebd7e15357f92934de",
+            "title": "这嘴子吃着不烧心",
+            "snippet": "二重螺旋第22只乐园的白兔二创",
+            "author": "冰离°",
+            "author_uid": "22190551",
+            "published_at": "2026-10-18T09:38:46+00:00",
+            "matched_published_at": "2026-10-18T09:38:46+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117461231932825",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T09:38:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461231932825",
+                "author": "冰离°",
+                "author_uid": "22190551"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "ef19a84b935737e1f68600df",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T09:38:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461231932825",
+                "author": "冰离°",
+                "author_uid": "22190551"
+              }
+            }
+          },
+          {
+            "id": "e3b38e994d943e5a6eba",
+            "title": "【whiplash】法露茜",
+            "snippet": "二重螺旋第22只乐园的白兔二创",
+            "author": "俺牢孙来也",
+            "author_uid": "250601973",
+            "published_at": "2026-10-18T05:49:49+00:00",
+            "matched_published_at": "2026-10-18T05:49:49+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117460325899826",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T05:49:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117460325899826",
+                "author": "俺牢孙来也",
+                "author_uid": "250601973"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "79dcf979aa3f4be204db4c5b",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T05:49:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117460325899826",
+                "author": "俺牢孙来也",
+                "author_uid": "250601973"
+              }
+            }
+          },
+          {
+            "id": "23f433c297a87c181bdd",
+            "title": "喜欢上了他 却一时接受不了他的残缺 ！",
+            "snippet": "二重螺旋第22只乐园的白兔二创",
+            "author": "豪豪影视大全",
+            "author_uid": "3546649171331453",
+            "published_at": "2026-10-18T03:19:29+00:00",
+            "matched_published_at": "2026-10-18T03:19:29+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117459738694062",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T03:19:29+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459738694062",
+                "author": "豪豪影视大全",
+                "author_uid": "3546649171331453"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "737ab152c8ae5a5bdd7c9b35",
+              "field": "tags[3]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T03:19:29+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459738694062",
+                "author": "豪豪影视大全",
+                "author_uid": "3546649171331453"
+              }
+            }
+          }
+        ],
+        "total_matches": 13,
+        "page": 1,
+        "has_more": true,
+        "truncated": true,
+        "retrieval_terms": [
+          "二重螺旋",
+          "二创"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": "2026-10-17T00:00:00+08:00",
+          "end": "2026-10-27T00:00:00+08:00",
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.01600000000325963,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "e595243700b6d0db5f4fedf19bd065d5d9c5540a7d1d7d25878cf712cfd020fc",
+        "next_page": 2
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "aa5ac77e7e65e523d681",
+          "title": "◉⩌◉隔壁班来了个皎皎！大家都扭不过她！『理理我嘛』【二重螺旋】",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "d772e2431113e2504ea78dda",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T13:46:38+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117462205008552",
+                "author": "春日野悠闲",
+                "author_uid": "176809329"
+              }
+            },
+            {
+              "id": "a53f15ea74fa53102b2f2a43",
+              "field": "title",
+              "start": 0,
+              "end": 32,
+              "text": "◉⩌◉隔壁班来了个皎皎！大家都扭不过她！『理理我嘛』【二重螺旋】",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T13:46:38+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117462205008552",
+                "author": "春日野悠闲",
+                "author_uid": "176809329"
+              }
+            },
+            {
+              "id": "d487f96f2158e1ace42c0a14",
+              "field": "tags[9]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T13:46:38+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117462205008552",
+                "author": "春日野悠闲",
+                "author_uid": "176809329"
+              }
+            }
+          ],
+          "author": "春日野悠闲",
+          "published_at": "2026-10-18T13:46:38+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "d92bf4e9d501809a03cf",
+          "title": "【苏乙】BLACKPINK - JUMP",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "4390242ec2b9ac87e1317388",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-19T11:32:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117467338771007",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            },
+            {
+              "id": "fecb91671f42c71d5c9f011f",
+              "field": "body_text",
+              "start": 0,
+              "end": 38,
+              "text": "模型：二重螺旋/徐大大哟i 动作：NatsumiSan 场景：ChyetYi",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-19T11:32:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117467338771007",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            },
+            {
+              "id": "b3b369cb0a8ff6ae0d3e6af9",
+              "field": "tags[8]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-19T11:32:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117467338771007",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            }
+          ],
+          "author": "絳色",
+          "published_at": "2026-10-19T11:32:46+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "16b4fba3e45fb434a540",
+          "title": "法露茜的假日",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "be180b43dc2007f9bd3e0623",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            },
+            {
+              "id": "48c896fc5b3f18972bf234e6",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            },
+            {
+              "id": "f90b7bc8b1c0a6d4100f71fb",
+              "field": "tags[3]",
+              "start": 0,
+              "end": 2,
+              "text": "二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T12:14:27+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461852619028",
+                "author": "何丶以笙",
+                "author_uid": "17755830"
+              }
+            }
+          ],
+          "author": "何丶以笙",
+          "published_at": "2026-10-18T12:14:27+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "d1ebd7e15357f92934de",
+          "title": "这嘴子吃着不烧心",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "ef19a84b935737e1f68600df",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T09:38:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461231932825",
+                "author": "冰离°",
+                "author_uid": "22190551"
+              }
+            },
+            {
+              "id": "02a61086e21a9041f05c9f1a",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T09:38:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461231932825",
+                "author": "冰离°",
+                "author_uid": "22190551"
+              }
+            },
+            {
+              "id": "275c26a73533bb3c72be6c04",
+              "field": "tags[5]",
+              "start": 0,
+              "end": 2,
+              "text": "二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T09:38:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117461231932825",
+                "author": "冰离°",
+                "author_uid": "22190551"
+              }
+            }
+          ],
+          "author": "冰离°",
+          "published_at": "2026-10-18T09:38:46+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "e3b38e994d943e5a6eba",
+          "title": "【whiplash】法露茜",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "79dcf979aa3f4be204db4c5b",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T05:49:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117460325899826",
+                "author": "俺牢孙来也",
+                "author_uid": "250601973"
+              }
+            },
+            {
+              "id": "ff00857e7481dac843afb0de",
+              "field": "body_text",
+              "start": 0,
+              "end": 89,
+              "text": "【模型】：二重螺旋 【场景】：amyang-xyz/深空之眼 【动作】：NatsumiSan 【镜头】：NatsumiSan 【BGM】：whiplash 【工具】：https:",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T05:49:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117460325899826",
+                "author": "俺牢孙来也",
+                "author_uid": "250601973"
+              }
+            },
+            {
+              "id": "8b08ba4b728cf884cc0e2943",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T05:49:49+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117460325899826",
+                "author": "俺牢孙来也",
+                "author_uid": "250601973"
+              }
+            }
+          ],
+          "author": "俺牢孙来也",
+          "published_at": "2026-10-18T05:49:49+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "23f433c297a87c181bdd",
+          "title": "喜欢上了他 却一时接受不了他的残缺 ！",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "737ab152c8ae5a5bdd7c9b35",
+              "field": "tags[3]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T03:19:29+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459738694062",
+                "author": "豪豪影视大全",
+                "author_uid": "3546649171331453"
+              }
+            },
+            {
+              "id": "c0983f83809fdd469e79e5f7",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 4,
+              "text": "白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T03:19:29+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459738694062",
+                "author": "豪豪影视大全",
+                "author_uid": "3546649171331453"
+              }
+            },
+            {
+              "id": "8bbbc8ee7a6fcbd159a07b7b",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T03:19:29+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459738694062",
+                "author": "豪豪影视大全",
+                "author_uid": "3546649171331453"
+              }
+            }
+          ],
+          "author": "豪豪影视大全",
+          "published_at": "2026-10-18T03:19:29+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "e3c76187ac18e8be666d",
+          "title": "弟弟被姐姐两招就拿捏了，对这个姐姐崇拜了 ！",
+          "text": "二重螺旋创作者激励计划",
+          "spans": [
+            {
+              "id": "9b8abf4e84424fd00f5bbe01",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T02:12:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459470255852",
+                "author": "美美影视大全",
+                "author_uid": "3493074814634642"
+              }
+            },
+            {
+              "id": "66197f49dfcf7315ac036b2e",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 2,
+              "text": "二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T02:12:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459470255852",
+                "author": "美美影视大全",
+                "author_uid": "3493074814634642"
+              }
+            },
+            {
+              "id": "a16efce2c792d2014b019cd8",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T02:12:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459470255852",
+                "author": "美美影视大全",
+                "author_uid": "3493074814634642"
+              }
+            }
+          ],
+          "author": "美美影视大全",
+          "published_at": "2026-10-18T02:12:46+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "ed13b3a9948e96e98087",
+          "title": "爸爸跨国陪读，这中国式父子太真实 ？",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "96f1299c11db5feea07a9a88",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T02:07:41+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459453479373",
+                "author": "美美影视大全",
+                "author_uid": "3493074814634642"
+              }
+            },
+            {
+              "id": "d858524b3aef87566fdfbab9",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 4,
+              "text": "白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T02:07:41+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459453479373",
+                "author": "美美影视大全",
+                "author_uid": "3493074814634642"
+              }
+            },
+            {
+              "id": "fbe9129c49369e30bb0b3667",
+              "field": "tags[3]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T02:07:41+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459453479373",
+                "author": "美美影视大全",
+                "author_uid": "3493074814634642"
+              }
+            }
+          ],
+          "author": "美美影视大全",
+          "published_at": "2026-10-18T02:07:41+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "01d853c2c705ed558fac",
+          "title": "真的太喜欢她的这个气势了～",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "9e0cba36647d8d61b72094d1",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T01:48:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459386372406",
+                "author": "咖啡coffee影视大全",
+                "author_uid": "1852475674"
+              }
+            },
+            {
+              "id": "72dfce9d23fd754366cd0ba8",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 4,
+              "text": "白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T01:48:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459386372406",
+                "author": "咖啡coffee影视大全",
+                "author_uid": "1852475674"
+              }
+            },
+            {
+              "id": "19449323bfebc34221ec3c9f",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T01:48:46+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459386372406",
+                "author": "咖啡coffee影视大全",
+                "author_uid": "1852475674"
+              }
+            }
+          ],
+          "author": "咖啡coffee影视大全",
+          "published_at": "2026-10-18T01:48:46+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "869cc732635d1903b882",
+          "title": "他脾气还怪好嘞，要是我就直接走了！",
+          "text": "二重螺旋创作者激励计划",
+          "spans": [
+            {
+              "id": "d8c00d97e0e0b1067751dac0",
+              "field": "tags[3]",
+              "start": 0,
+              "end": 11,
+              "text": "二重螺旋创作者激励计划",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T01:28:57+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459302488012",
+                "author": "爱吃花生粒",
+                "author_uid": "3461580456987096"
+              }
+            },
+            {
+              "id": "2726b7b9b696aa86ac35988e",
+              "field": "tags[5]",
+              "start": 0,
+              "end": 2,
+              "text": "二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T01:28:57+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459302488012",
+                "author": "爱吃花生粒",
+                "author_uid": "3461580456987096"
+              }
+            },
+            {
+              "id": "716fea6d66b719de218400aa",
+              "field": "tags[4]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T01:28:57+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459302488012",
+                "author": "爱吃花生粒",
+                "author_uid": "3461580456987096"
+              }
+            }
+          ],
+          "author": "爱吃花生粒",
+          "published_at": "2026-10-18T01:28:57+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "1eadf15f4fb01b5d4430",
+          "title": "实习生第一天上班就偷懒，师傅可不惯着他！",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "d3937d40d0582304940f61ed",
+              "field": "tags[1]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T01:27:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459302486350",
+                "author": "爱吃花生粒",
+                "author_uid": "3461580456987096"
+              }
+            },
+            {
+              "id": "5b8b85fc8f2b00b1a9ccaeb1",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 4,
+              "text": "白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T01:27:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459302486350",
+                "author": "爱吃花生粒",
+                "author_uid": "3461580456987096"
+              }
+            },
+            {
+              "id": "dd6ce9078c34c07ba5667aef",
+              "field": "tags[2]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-18T01:27:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117459302486350",
+                "author": "爱吃花生粒",
+                "author_uid": "3461580456987096"
+              }
+            }
+          ],
+          "author": "爱吃花生粒",
+          "published_at": "2026-10-18T01:27:04+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "5169cdff77c0dbe73b51",
+          "title": "[Warframe]不死流电妹U精单人时光科研和单人U精赛中9999实战",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "f7dce6fea4a4abd85df43da0",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-17T13:59:17+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117456534440455",
+                "author": "Wilson霄",
+                "author_uid": "1664794234"
+              }
+            }
+          ],
+          "author": "Wilson霄",
+          "published_at": "2026-10-17T13:59:17+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "83ec4fd8812632720ad8",
+          "title": "【艾达】HYO MIN - Nice Body",
+          "text": "二重螺旋第22只乐园的白兔二创",
+          "spans": [
+            {
+              "id": "a87467ef9be607aae3e0684f",
+              "field": "tags[0]",
+              "start": 0,
+              "end": 15,
+              "text": "二重螺旋第22只乐园的白兔二创",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-17T11:38:31+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117456030927347",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            },
+            {
+              "id": "309c8eac8626b67b66be5f24",
+              "field": "body_text",
+              "start": 0,
+              "end": 38,
+              "text": "模型：二重螺旋/徐大大哟i 动作：NatsumiSan 场景：ChyetYi",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-17T11:38:31+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117456030927347",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            },
+            {
+              "id": "48c7a55f61f13d1af96ce369",
+              "field": "tags[5]",
+              "start": 0,
+              "end": 4,
+              "text": "二重螺旋",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-17T11:38:31+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117456030927347",
+                "author": "絳色",
+                "author_uid": "189035137"
+              }
+            }
+          ],
+          "author": "絳色",
+          "published_at": "2026-10-17T11:38:31+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 17352,
+      "input_real_ids": [
+        "aa5ac77e7e65e523d681",
+        "d92bf4e9d501809a03cf",
+        "16b4fba3e45fb434a540",
+        "d1ebd7e15357f92934de",
+        "e3b38e994d943e5a6eba",
+        "23f433c297a87c181bdd",
+        "e3c76187ac18e8be666d",
+        "ed13b3a9948e96e98087",
+        "01d853c2c705ed558fac",
+        "869cc732635d1903b882",
+        "1eadf15f4fb01b5d4430",
+        "5169cdff77c0dbe73b51",
+        "83ec4fd8812632720ad8"
+      ]
+    },
+    {
+      "number": 11,
+      "reference": {
+        "n": 11,
+        "q": "GTEW的游戏小仓库昨天发了哪些内容？",
+        "terms": [
+          "GTEW的游戏小仓库"
+        ],
+        "time_range": {
+          "start": "2026-10-25",
+          "end": "2026-10-26",
+          "timezone": "Asia/Shanghai"
+        },
+        "expected": [
+          "82721bf0b7d77dcdd86c",
+          "cf7d8aab7916ac488445"
+        ],
+        "forbidden": [],
+        "expect": "found",
+        "note": "两条标题分别涉及mod副本改动刷取、角色刷取和配装；作者名不是足够的内容证据。"
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "GTEW的游戏小仓库昨天发了哪些内容？",
+        "terms": [
+          "GTEW的游戏小仓库"
+        ],
+        "time_range": {
+          "start": "2026-10-25",
+          "end": "2026-10-26",
+          "timezone": "Asia/Shanghai"
+        }
+      },
+      "search": {
+        "request_id": "8594adc4ecdf45a996635927abdf67d4",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "82721bf0b7d77dcdd86c",
+            "title": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+            "snippet": "GTEW的游戏小仓库",
+            "author": "GTEW的游戏小仓库",
+            "author_uid": "4504907",
+            "published_at": "2026-10-25T10:01:36+00:00",
+            "matched_published_at": "2026-10-25T10:01:36+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117500960374873",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              },
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "4f1026045504600f0669c8d5",
+              "field": "author",
+              "start": 0,
+              "end": 10,
+              "text": "GTEW的游戏小仓库",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            }
+          },
+          {
+            "id": "cf7d8aab7916ac488445",
+            "title": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+            "snippet": "GTEW的游戏小仓库",
+            "author": "GTEW的游戏小仓库",
+            "author_uid": "4504907",
+            "published_at": "2026-10-25T09:50:04+00:00",
+            "matched_published_at": "2026-10-25T09:50:04+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117500910177188",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              },
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "09e94f9018bf8a66713ab89d",
+              "field": "author",
+              "start": 0,
+              "end": 10,
+              "text": "GTEW的游戏小仓库",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            }
+          }
+        ],
+        "total_matches": 2,
+        "page": 1,
+        "has_more": false,
+        "truncated": true,
+        "retrieval_terms": [
+          "gtew的游戏小仓库"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": "2026-10-25T00:00:00+08:00",
+          "end": "2026-10-26T00:00:00+08:00",
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.0,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "e5c5b735d9fa866b9709c680d2a8d8492439ca4fd5d0d9ee29fef35d17f8230b",
+        "next_page": null
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "82721bf0b7d77dcdd86c",
+          "title": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+          "text": "GTEW的游戏小仓库",
+          "spans": [
+            {
+              "id": "4f1026045504600f0669c8d5",
+              "field": "author",
+              "start": 0,
+              "end": 10,
+              "text": "GTEW的游戏小仓库",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "0741bd89a7d44757e8e24d4c",
+              "field": "author",
+              "start": 0,
+              "end": 10,
+              "text": "GTEW的游戏小仓库",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T10:01:36+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500960374873",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            }
+          ],
+          "author": "GTEW的游戏小仓库",
+          "published_at": "2026-10-25T10:01:36+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        },
+        {
+          "id": "cf7d8aab7916ac488445",
+          "title": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+          "text": "GTEW的游戏小仓库",
+          "spans": [
+            {
+              "id": "09e94f9018bf8a66713ab89d",
+              "field": "author",
+              "start": 0,
+              "end": 10,
+              "text": "GTEW的游戏小仓库",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋",
+                "label": "关键词 · 二重螺旋",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            },
+            {
+              "id": "ca61e51cc9dbf1582c75e726",
+              "field": "author",
+              "start": 0,
+              "end": 10,
+              "text": "GTEW的游戏小仓库",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 希罗",
+                "label": "关键词 · 二重螺旋 希罗",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-25T09:50:04+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117500910177188",
+                "author": "GTEW的游戏小仓库",
+                "author_uid": "4504907"
+              }
+            }
+          ],
+          "author": "GTEW的游戏小仓库",
+          "published_at": "2026-10-25T09:50:04+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 2508,
+      "input_real_ids": [
+        "82721bf0b7d77dcdd86c",
+        "cf7d8aab7916ac488445"
+      ]
+    },
+    {
+      "number": 12,
+      "reference": {
+        "n": 12,
+        "q": "《你留下的春天》用了什么图像素材和背景音乐？",
+        "terms": [
+          "你留下的春天"
+        ],
+        "expected": [
+          "c70646bf169500c49212"
+        ],
+        "forbidden": [],
+        "expect": "found",
+        "note": "正文明确图像素材为二重螺旋官方漫画《流光照影》，BGM为My Little Garden；引用需包含这些署名。",
+        "required_quotes": [
+          "流光照影",
+          "My Little Garden"
+        ]
+      },
+      "request": {
+        "profile_id": "acceptance-v4",
+        "question": "《你留下的春天》用了什么图像素材和背景音乐？",
+        "terms": [
+          "你留下的春天"
+        ]
+      },
+      "search": {
+        "request_id": "813bce82f6584a5c96654a2b2992070b",
+        "outcome": "found",
+        "items": [
+          {
+            "id": "c70646bf169500c49212",
+            "title": "你留下的春天",
+            "snippet": "你留下的春天",
+            "author": "沂水三生",
+            "author_uid": "1626441127",
+            "published_at": "2026-10-16T11:00:00+00:00",
+            "matched_published_at": "2026-10-16T11:00:00+00:00",
+            "time_basis": "publication",
+            "url": "https://www.bilibili.com/video/av117449504588761",
+            "content_type": "video",
+            "sources": [
+              {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-16T11:00:00+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117449504588761",
+                "author": "沂水三生",
+                "author_uid": "1626441127"
+              }
+            ],
+            "dynamic_contexts": [],
+            "snippet_truncated": true,
+            "source_text_limited": false,
+            "sources_truncated": false,
+            "contexts_truncated": false,
+            "snippet_evidence": {
+              "id": "648b81982a150b45407941b5",
+              "field": "title",
+              "start": 0,
+              "end": 6,
+              "text": "你留下的春天",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-16T11:00:00+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117449504588761",
+                "author": "沂水三生",
+                "author_uid": "1626441127"
+              }
+            }
+          }
+        ],
+        "total_matches": 1,
+        "page": 1,
+        "has_more": false,
+        "truncated": true,
+        "retrieval_terms": [
+          "你留下的春天"
+        ],
+        "coverage": {
+          "scope": "retained_allowed_data",
+          "timezone": "Asia/Shanghai",
+          "start": null,
+          "end": null,
+          "boundary": "start_inclusive_end_exclusive",
+          "as_of": "2026-10-26T00:31:39.689826+08:00",
+          "limited_sampling": true,
+          "insufficient": false,
+          "reasons": [],
+          "missing_publication_count": 0,
+          "sources": [
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋",
+              "label": "关键词 · 二重螺旋",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 希罗",
+              "label": "关键词 · 二重螺旋 希罗",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 10,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            },
+            {
+              "kind": "keyword_search",
+              "key": "二重螺旋 二创",
+              "label": "关键词 · 二重螺旋 二创",
+              "availability": "ready",
+              "last_checked_at": "2026-10-25T16:31:39.689826+00:00",
+              "last_success_at": "2026-10-25T16:31:39.689826+00:00",
+              "retained_count": 20,
+              "error_code": null,
+              "error_message": null,
+              "temporary": false
+            }
+          ],
+          "sources_truncated": false
+        },
+        "metrics": {
+          "cache_hit": false,
+          "replayed": false,
+          "logical_model_calls": 0,
+          "http_attempts": 0,
+          "rss_requests": 0,
+          "actual_requests": 0,
+          "elapsed_seconds": 0.0,
+          "tokens": null,
+          "origin_metrics": null
+        },
+        "collection_failures": [],
+        "temporary_video_search_only": false,
+        "snapshot_version": "6bd395f4fe2ad3d048352639aa2fa3e3be43cfe8b80932eaab3a327e042f08f2",
+        "next_page": null
+      },
+      "manual_review_required": true,
+      "input_items": [
+        {
+          "id": "c70646bf169500c49212",
+          "title": "你留下的春天",
+          "text": "你留下的春天",
+          "spans": [
+            {
+              "id": "648b81982a150b45407941b5",
+              "field": "title",
+              "start": 0,
+              "end": 6,
+              "text": "你留下的春天",
+              "source": {
+                "kind": "keyword_search",
+                "key": "二重螺旋 二创",
+                "label": "关键词 · 二重螺旋 二创",
+                "collected_at": "2026-10-26T00:31:39.689826+08:00",
+                "published_at": "2026-10-16T11:00:00+00:00",
+                "dynamic_id": null,
+                "query_id": null,
+                "temporary": false,
+                "url": "https://www.bilibili.com/video/av117449504588761",
+                "author": "沂水三生",
+                "author_uid": "1626441127"
+              }
+            }
+          ],
+          "author": "沂水三生",
+          "published_at": "2026-10-16T11:00:00+00:00",
+          "content_type": "video",
+          "text_truncated": true
+        }
+      ],
+      "input_truncated": true,
+      "input_chars": 1127,
+      "input_real_ids": [
+        "c70646bf169500c49212"
+      ]
+    }
+  ]
+}

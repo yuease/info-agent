@@ -1,0 +1,2640 @@
+{
+  "frozen_at": "2026-10-26T00:31:39.689826+08:00",
+  "collection": {
+    "source_results": [
+      {
+        "kind": "keyword_search",
+        "key": "二重螺旋",
+        "label": "关键词 · 二重螺旋",
+        "status": "ok",
+        "count": 20,
+        "batches": 1,
+        "stop_reason": "single_batch"
+      },
+      {
+        "kind": "keyword_search",
+        "key": "二重螺旋 希罗",
+        "label": "关键词 · 二重螺旋 希罗",
+        "status": "ok",
+        "count": 10,
+        "batches": 1,
+        "stop_reason": "single_batch"
+      },
+      {
+        "kind": "keyword_search",
+        "key": "二重螺旋 二创",
+        "label": "关键词 · 二重螺旋 二创",
+        "status": "ok",
+        "count": 20,
+        "batches": 1,
+        "stop_reason": "single_batch"
+      }
+    ],
+    "metrics": {
+      "logical_model_calls": 0,
+      "http_attempts": 0,
+      "network_retries": 0,
+      "tokens": null,
+      "rss_requests": 3,
+      "rss_retries": 0,
+      "collected_count": 40,
+      "candidate_count": 40,
+      "elapsed_seconds": 11.031000000002678,
+      "history_filtered": 0,
+      "duration_filtered": 0,
+      "duplicates": 10
+    },
+    "status": "collection"
+  },
+  "items": [
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "2eaca9989420dc7c87f7",
+        "title": "不是你的恋爱 女二看出男主其实也想继续调查，可是男主死不承认",
+        "url": "https://www.bilibili.com/video/av117502017407345",
+        "author": "紫米葡萄桃",
+        "published": "Sun, 25 Oct 2026 15:00:00 GMT",
+        "published_at": "2026-10-25T15:00:00+00:00",
+        "excerpt": "-",
+        "duration_seconds": 82,
+        "tags": [
+          "徐康俊",
+          "不是你的恋爱",
+          "二重螺旋创作者激励计划",
+          "安恩真",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117502017407345",
+          "bilibili:BV1YcnS6EE8Z"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/753acbd48aca9ea4cd4330c0702e5ad765eebb1d.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "298664222",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "9ff199beece6d1b23fcf",
+        "title": "飞车勋章赛车的颜值代表？这个大喷太美了！",
+        "url": "https://www.bilibili.com/video/av117501933388028",
+        "author": "B站千寻蛋挞",
+        "published": "Sun, 25 Oct 2026 14:13:37 GMT",
+        "published_at": "2026-10-25T14:13:37+00:00",
+        "excerpt": "点赞支持一下吧！",
+        "duration_seconds": 75,
+        "tags": [
+          "qq飞车",
+          "飞马繁华与你相约",
+          "二重螺旋创作者激励计划",
+          "必剪创作",
+          "qq飞车手游",
+          "游戏测评",
+          "爆料",
+          "赛车游戏",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117501933388028",
+          "bilibili:BV164nS68ESi"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/145a0fac5cbbe8c7184a6cc10e8566b30050288d.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "302627654",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "点赞支持一下吧！",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "04c9911138d9507ad671",
+        "title": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+        "url": "https://www.bilibili.com/video/av117501664954043",
+        "author": "仇小乐",
+        "published": "Sun, 25 Oct 2026 13:11:26 GMT",
+        "published_at": "2026-10-25T13:11:26+00:00",
+        "excerpt": "",
+        "duration_seconds": 188,
+        "tags": [
+          "游戏实况",
+          "灾厄副本",
+          "二重螺旋创作者激励计划",
+          "黎瑟",
+          "二重螺旋",
+          "网络游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117501664954043",
+          "bilibili:BV1p1HV6vEk5"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/9e16b049a60a0a5b92820fa2cd60b51475afb2db.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "324198218",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "82721bf0b7d77dcdd86c",
+        "title": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+        "url": "https://www.bilibili.com/video/av117500960374873",
+        "author": "GTEW的游戏小仓库",
+        "published": "Sun, 25 Oct 2026 10:01:36 GMT",
+        "published_at": "2026-10-25T10:01:36+00:00",
+        "excerpt": "",
+        "duration_seconds": 228,
+        "tags": [
+          "雷队水队mod",
+          "mod刷取",
+          "密函线索",
+          "配装配队",
+          "灾厄武器",
+          "二重螺旋创作者激励计划",
+          "游戏优化",
+          "教程攻略",
+          "二重螺旋",
+          "新手攻略",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117500960374873",
+          "bilibili:BV1naH56PEmd"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/13b7fa54829dd749b5485bf76c13c5acb44b476d.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "4504907",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "cf7d8aab7916ac488445",
+        "title": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+        "url": "https://www.bilibili.com/video/av117500910177188",
+        "author": "GTEW的游戏小仓库",
+        "published": "Sun, 25 Oct 2026 09:50:04 GMT",
+        "published_at": "2026-10-25T09:50:04+00:00",
+        "excerpt": "",
+        "duration_seconds": 334,
+        "tags": [
+          "周本刷取",
+          "止流煜明",
+          "水队mod",
+          "雷队mod",
+          "二重螺旋创作者激励计划",
+          "黎瑟",
+          "伊薇",
+          "教程攻略",
+          "二重螺旋",
+          "新手攻略",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117500910177188",
+          "bilibili:BV1w8H56iEKJ"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/c9f8e99aa311d5940e0821de9d4f62e2a8966ec4.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "4504907",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "d4fe08c18d8312db366b",
+        "title": "【二重螺旋】黎瑟万华皮肤值得升级吗？结丝夜行特效展示+三套染色搭配",
+        "url": "https://www.bilibili.com/video/av117500792543987",
+        "author": "螺旋中枢",
+        "published": "Sun, 25 Oct 2026 09:21:37 GMT",
+        "published_at": "2026-10-25T09:21:37+00:00",
+        "excerpt": "",
+        "duration_seconds": 171,
+        "tags": [
+          "行于破晓",
+          "二重螺旋行于破晓版本",
+          "全武器免费",
+          "新皮肤",
+          "二次元",
+          "游戏",
+          "全角色免费",
+          "教程攻略",
+          "二重螺旋",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117500792543987",
+          "bilibili:BV11NHL66ELg"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/9616a1188db2bf2c6597d830a0bc2c87d1e0f4c9.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "3546904627513999",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "6700f7f5c2c92b19b91a",
+        "title": "假如二重螺旋是一款格斗游戏",
+        "url": "https://www.bilibili.com/video/av117500725434336",
+        "author": "smile星宇",
+        "published": "Sun, 25 Oct 2026 09:04:05 GMT",
+        "published_at": "2026-10-25T09:04:05+00:00",
+        "excerpt": "参考视频：BV1ozn668Emc",
+        "duration_seconds": 42,
+        "tags": [
+          "二重螺旋创作者激励计划",
+          "二重螺旋",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117500725434336",
+          "bilibili:BV1R2H56XELx"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/fd6bed1696ed32b34a0b0b3983c80439c9af0f9f.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "399617651",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "参考视频：BV1ozn668Emc",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "4afa1d61a77257d5ceb3",
+        "title": "奉香群英映人心",
+        "url": "https://www.bilibili.com/video/av117500708652596",
+        "author": "萌新小屋",
+        "published": "Sun, 25 Oct 2026 08:59:39 GMT",
+        "published_at": "2026-10-25T08:59:39+00:00",
+        "excerpt": "",
+        "duration_seconds": 7325,
+        "tags": [
+          "二重螺旋创作者激励计划",
+          "活动剧情",
+          "二重螺旋",
+          "记录",
+          "单机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117500708652596",
+          "bilibili:BV1XUH56HE7D"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/77c4da6d34ef20f95990ef5258a382f87759a37f.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "121929614",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "f234ce395819c14579bf",
+        "title": "1.7入坑指南，二重真的要火？【二重螺旋】",
+        "url": "https://www.bilibili.com/video/av117500524105143",
+        "author": "老顾不烦",
+        "published": "Sun, 25 Oct 2026 08:15:49 GMT",
+        "published_at": "2026-10-25T08:15:49+00:00",
+        "excerpt": "老秦是真爱二重，这期基本都是他策划的 你懂的你懂的你懂的你懂的你懂的你懂的",
+        "duration_seconds": 526,
+        "tags": [
+          "二重螺旋创作者激励计划",
+          "1.7版本",
+          "萌新",
+          "入坑指南",
+          "二重螺旋",
+          "游戏测评",
+          "二次元",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117500524105143",
+          "bilibili:BV1TVHG6BETw"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/44d8038c671818024fbbad7d22ac6555f72f8809.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "240650947",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "老秦是真爱二重，这期基本都是他策划的 你懂的你懂的你懂的你懂的你懂的你懂的",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "2497712886cc70eeac82",
+        "title": "滔搏首胜语音！众人精准记住hope闪现时间！",
+        "url": "https://www.bilibili.com/video/av117500389955075",
+        "author": "BLG卷土重来",
+        "published": "Sun, 25 Oct 2026 07:35:52 GMT",
+        "published_at": "2026-10-25T07:35:52+00:00",
+        "excerpt": "69的r好准",
+        "duration_seconds": 98,
+        "tags": [
+          "lpl",
+          "al",
+          "英雄联盟",
+          "二重螺旋创作者激励计划",
+          "必剪创作",
+          "hle",
+          "bin",
+          "g2",
+          "blg",
+          "tes",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117500389955075",
+          "bilibili:BV1vcHG62Ejs"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/85cb96fc374988f6a556ae563231d2b429931307.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "494455689",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "69的r好准",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "92b9467f03e224b9da89",
+        "title": "【二重螺旋1.7】没灾厄武器刷灾厄，止流速刷分享",
+        "url": "https://www.bilibili.com/video/av117500272445983",
+        "author": "超耐久黎宝",
+        "published": "Sun, 25 Oct 2026 07:22:03 GMT",
+        "published_at": "2026-10-25T07:22:03+00:00",
+        "excerpt": "",
+        "duration_seconds": 314,
+        "tags": [
+          "权能王朝了",
+          "7溯止流",
+          "七溯止流",
+          "止流mod",
+          "止流配队",
+          "灾厄速刷",
+          "止流魔之楔",
+          "二重螺旋创作者激励计划",
+          "必剪创作",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117500272445983",
+          "bilibili:BV1XkHG6mEXg"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/17b9bbc791ffd12e66ab93da06f42072cdb72c04.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "38783642",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "9b5d768b87aed5a513ff",
+        "title": "就算你当了县委书记，你拿我也没办法",
+        "url": "https://www.bilibili.com/video/av117499752355379",
+        "author": "懂壹点人情世故",
+        "published": "Sun, 25 Oct 2026 04:54:32 GMT",
+        "published_at": "2026-10-25T04:54:32+00:00",
+        "excerpt": "",
+        "duration_seconds": 544,
+        "tags": [
+          "二重螺旋创作者激励计划",
+          "人民的名义",
+          "情商",
+          "认知",
+          "影视剪辑",
+          "职场",
+          "电视剧",
+          "思维",
+          "王志文",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117499752355379",
+          "bilibili:BV1a8HV61EM1"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/0d6cef5538fd3b453c6e904df134eddb648e50f0.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "21178580",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "886fdcd00cf441669b27",
+        "title": "【二重螺旋】1.7值不值得回坑？一个视频找回狩月的意义！",
+        "url": "https://www.bilibili.com/video/av117496665348282",
+        "author": "乐观的四十七",
+        "published": "Sun, 25 Oct 2026 03:03:56 GMT",
+        "published_at": "2026-10-25T03:03:56+00:00",
+        "excerpt": "总结了一下最近大家常会提到的问题 有些还挺有趣的 这期视频就讲讲吧 希望有所帮助 玩家群：952147162",
+        "duration_seconds": 409,
+        "tags": [
+          "黎瑟浴火",
+          "游戏杂谈",
+          "二重螺旋行于破晓版本",
+          "二游",
+          "灾厄武器",
+          "二重螺旋",
+          "网络游戏",
+          "手机游戏",
+          "二次元",
+          "游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117496665348282",
+          "bilibili:BV13fHT6aE2t"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/1fdfe3d003d45c05ad2397060a9f8faac7e726dc.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "425688",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "总结了一下最近大家常会提到的问题 有些还挺有趣的 这期视频就讲讲吧 希望有所帮助 玩家群：952147162",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "bb7b3961ef7994a6038a",
+        "title": "快跑",
+        "url": "https://www.bilibili.com/video/av117499215481958",
+        "author": "赤红_蜜柑",
+        "published": "Sun, 25 Oct 2026 02:38:19 GMT",
+        "published_at": "2026-10-25T02:38:19+00:00",
+        "excerpt": "-",
+        "duration_seconds": 69,
+        "tags": [
+          "娱乐",
+          "搞笑",
+          "二重螺旋创作者激励计划",
+          "沙雕",
+          "电子竞技"
+        ],
+        "source_ids": [
+          "bilibili:av117499215481958",
+          "bilibili:BV1rAH36xEKu"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/c9f6d9e56df4699651c53a71d424e91abec68306.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "477933527",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "d631f488335d46947e13",
+        "title": "【二重螺旋1.7】一个叫黎瑟的女孩儿决定去活",
+        "url": "https://www.bilibili.com/video/av117495927147634",
+        "author": "鹦鹉不咕",
+        "published": "Sun, 25 Oct 2026 02:30:00 GMT",
+        "published_at": "2026-10-25T02:30:00+00:00",
+        "excerpt": "",
+        "duration_seconds": 1255,
+        "tags": [
+          "二重螺旋行于破晓版本",
+          "二重螺旋黎瑟",
+          "鹦鹉不咕",
+          "剧情解读",
+          "二重螺旋",
+          "游戏杂谈",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117495927147634",
+          "bilibili:BV1GDHN6FEit"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/aad7d642b680be2f1c0d30e175d981e8686062a2.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "478744",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "cd8aeba14ff052bdb78f",
+        "title": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+        "url": "https://www.bilibili.com/video/av117497923635149",
+        "author": "超耐久黎宝",
+        "published": "Sat, 24 Oct 2026 21:19:02 GMT",
+        "published_at": "2026-10-24T21:19:02+00:00",
+        "excerpt": "在56米超绝黑龙法阵里，16.8米宽的落雷AOE，每秒1次，1次8雷 ！ 清杂割草美滋滋~",
+        "duration_seconds": 224,
+        "tags": [
+          "包里的雷权能终于有用了",
+          "止流输出手法",
+          "止流七溯",
+          "止流7溯",
+          "止流速刷",
+          "止流魔之楔",
+          "二重螺旋创作者激励计划",
+          "必剪创作",
+          "沉浸式戏剧",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117497923635149",
+          "bilibili:BV1JyHu6SEh5"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/8a31435b5532f7e6255a9d530b804265ddffac9b.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "38783642",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "在56米超绝黑龙法阵里，16.8米宽的落雷AOE，每秒1次，1次8雷 ！ 清杂割草美滋滋~",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "5f2f1899a03f7d16d58a",
+        "title": "【直播时】聊起来原，鸣，终，绝，环的剧情锐评，拉出来一起鞭",
+        "url": "https://www.bilibili.com/video/av117496682121768",
+        "author": "airisuアイリス",
+        "published": "Sat, 24 Oct 2026 15:59:00 GMT",
+        "published_at": "2026-10-24T15:59:00+00:00",
+        "excerpt": "BV19eHM6qEhz 二重螺旋的直播切片，UP什么都玩，有个人独立客观标准，不接广，不混圈，玩游戏是为了开心，请保持清醒",
+        "duration_seconds": 152,
+        "tags": [
+          "二重螺旋创作者激励计划",
+          "手机游戏",
+          "二次元",
+          "异环",
+          "明日方舟：终末地",
+          "绝区零",
+          "二游",
+          "鸣潮",
+          "原神",
+          "二重螺旋",
+          "单机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117496682121768",
+          "bilibili:BV15QHT6TEnt"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/8cd7a8d805b7f74d28402c077e37778fbfe81216.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "3546623158257718",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "BV19eHM6qEhz 二重螺旋的直播切片，UP什么都玩，有个人独立客观标准，不接广，不混圈，玩游戏是为了开心，请保持清醒",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "f3be5546e48928b5bba1",
+        "title": "粗算刷了四天，谈谈新版本刷魔之楔的体验。",
+        "url": "https://www.bilibili.com/video/av117496245914614",
+        "author": "跑不赢中距离的肥驹",
+        "published": "Sat, 24 Oct 2026 14:08:42 GMT",
+        "published_at": "2026-10-24T14:08:42+00:00",
+        "excerpt": "能看到活下去的曙光了，但是真的能撑到二周年吗？",
+        "duration_seconds": 828,
+        "tags": [
+          "魔之楔",
+          "二重螺旋",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117496245914614",
+          "bilibili:BV1L1HN6YEL3"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/70e572ca7cba3e08c97ff16f48b2f73129fedb99.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "305216444",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "能看到活下去的曙光了，但是真的能撑到二周年吗？",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "36d19d3ff2c397bcefde",
+        "title": "二重螺旋 高质量成品退坑（限时账号派送，无任何隐性收费，纯福利无偿放出，名额有限速领）",
+        "url": "https://www.bilibili.com/video/av117496245983243",
+        "author": "今晚星星很闪喵",
+        "published": "Sat, 24 Oct 2026 14:01:19 GMT",
+        "published_at": "2026-10-24T14:01:19+00:00",
+        "excerpt": "-",
+        "duration_seconds": 27,
+        "tags": [
+          "二重螺旋退坑",
+          "退坑",
+          "二重螺旋",
+          "二次元",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117496245983243",
+          "bilibili:BV1i1HN6YE2E"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/98bb5ec1c37a853bf7bc68a391767b6bdf3ef877.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "3747573783333977",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋",
+      "article": {
+        "id": "746082abf2bb0dc22fa3",
+        "title": "【二重螺旋】轻松拿下黎瑟浴火！1.7上半戏剧超低配攻略",
+        "url": "https://www.bilibili.com/video/av117495692270373",
+        "author": "螺旋中枢",
+        "published": "Sat, 24 Oct 2026 11:41:04 GMT",
+        "published_at": "2026-10-24T11:41:04+00:00",
+        "excerpt": "",
+        "duration_seconds": 201,
+        "tags": [
+          "二次元",
+          "游戏",
+          "行于破晓",
+          "全武器免费",
+          "全角色免费",
+          "二重螺旋行于破晓版本",
+          "低配攻略",
+          "教程攻略",
+          "二重螺旋",
+          "皮肤",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117495692270373",
+          "bilibili:BV1R8HK6aEks"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/709e04bcd17b13cb7fbd8b645aba89892aaa4610.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋",
+            "label": "关键词 · 二重螺旋"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "3546904627513999",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 希罗",
+      "article": {
+        "id": "2eaca9989420dc7c87f7",
+        "title": "不是你的恋爱 女二看出男主其实也想继续调查，可是男主死不承认",
+        "url": "https://www.bilibili.com/video/av117502017407345",
+        "author": "紫米葡萄桃",
+        "published": "Sun, 25 Oct 2026 15:00:00 GMT",
+        "published_at": "2026-10-25T15:00:00+00:00",
+        "excerpt": "-",
+        "duration_seconds": 82,
+        "tags": [
+          "徐康俊",
+          "不是你的恋爱",
+          "二重螺旋创作者激励计划",
+          "安恩真",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117502017407345",
+          "bilibili:BV1YcnS6EE8Z"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/753acbd48aca9ea4cd4330c0702e5ad765eebb1d.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 希罗",
+            "label": "关键词 · 二重螺旋 希罗"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "298664222",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 希罗",
+      "article": {
+        "id": "9ff199beece6d1b23fcf",
+        "title": "飞车勋章赛车的颜值代表？这个大喷太美了！",
+        "url": "https://www.bilibili.com/video/av117501933388028",
+        "author": "B站千寻蛋挞",
+        "published": "Sun, 25 Oct 2026 14:13:37 GMT",
+        "published_at": "2026-10-25T14:13:37+00:00",
+        "excerpt": "点赞支持一下吧！",
+        "duration_seconds": 75,
+        "tags": [
+          "qq飞车",
+          "飞马繁华与你相约",
+          "二重螺旋创作者激励计划",
+          "必剪创作",
+          "qq飞车手游",
+          "游戏测评",
+          "爆料",
+          "赛车游戏",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117501933388028",
+          "bilibili:BV164nS68ESi"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/145a0fac5cbbe8c7184a6cc10e8566b30050288d.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 希罗",
+            "label": "关键词 · 二重螺旋 希罗"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "302627654",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "点赞支持一下吧！",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 希罗",
+      "article": {
+        "id": "04c9911138d9507ad671",
+        "title": "【二重螺旋】1.7版本最强雷队 黎瑟 煜明 扶疏 灾厄200层实战",
+        "url": "https://www.bilibili.com/video/av117501664954043",
+        "author": "仇小乐",
+        "published": "Sun, 25 Oct 2026 13:11:26 GMT",
+        "published_at": "2026-10-25T13:11:26+00:00",
+        "excerpt": "",
+        "duration_seconds": 188,
+        "tags": [
+          "游戏实况",
+          "灾厄副本",
+          "二重螺旋创作者激励计划",
+          "黎瑟",
+          "二重螺旋",
+          "网络游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117501664954043",
+          "bilibili:BV1p1HV6vEk5"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/9e16b049a60a0a5b92820fa2cd60b51475afb2db.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 希罗",
+            "label": "关键词 · 二重螺旋 希罗"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "324198218",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 希罗",
+      "article": {
+        "id": "82721bf0b7d77dcdd86c",
+        "title": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+        "url": "https://www.bilibili.com/video/av117500960374873",
+        "author": "GTEW的游戏小仓库",
+        "published": "Sun, 25 Oct 2026 10:01:36 GMT",
+        "published_at": "2026-10-25T10:01:36+00:00",
+        "excerpt": "",
+        "duration_seconds": 228,
+        "tags": [
+          "雷队水队mod",
+          "mod刷取",
+          "密函线索",
+          "配装配队",
+          "灾厄武器",
+          "二重螺旋创作者激励计划",
+          "游戏优化",
+          "教程攻略",
+          "二重螺旋",
+          "新手攻略",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117500960374873",
+          "bilibili:BV1naH56PEmd"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/13b7fa54829dd749b5485bf76c13c5acb44b476d.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 希罗",
+            "label": "关键词 · 二重螺旋 希罗"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "4504907",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 希罗",
+      "article": {
+        "id": "cf7d8aab7916ac488445",
+        "title": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+        "url": "https://www.bilibili.com/video/av117500910177188",
+        "author": "GTEW的游戏小仓库",
+        "published": "Sun, 25 Oct 2026 09:50:04 GMT",
+        "published_at": "2026-10-25T09:50:04+00:00",
+        "excerpt": "",
+        "duration_seconds": 334,
+        "tags": [
+          "周本刷取",
+          "止流煜明",
+          "水队mod",
+          "雷队mod",
+          "二重螺旋创作者激励计划",
+          "黎瑟",
+          "伊薇",
+          "教程攻略",
+          "二重螺旋",
+          "新手攻略",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117500910177188",
+          "bilibili:BV1w8H56iEKJ"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/c9f8e99aa311d5940e0821de9d4f62e2a8966ec4.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 希罗",
+            "label": "关键词 · 二重螺旋 希罗"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "4504907",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 希罗",
+      "article": {
+        "id": "d4fe08c18d8312db366b",
+        "title": "【二重螺旋】黎瑟万华皮肤值得升级吗？结丝夜行特效展示+三套染色搭配",
+        "url": "https://www.bilibili.com/video/av117500792543987",
+        "author": "螺旋中枢",
+        "published": "Sun, 25 Oct 2026 09:21:37 GMT",
+        "published_at": "2026-10-25T09:21:37+00:00",
+        "excerpt": "",
+        "duration_seconds": 171,
+        "tags": [
+          "行于破晓",
+          "二重螺旋行于破晓版本",
+          "全武器免费",
+          "新皮肤",
+          "二次元",
+          "游戏",
+          "全角色免费",
+          "教程攻略",
+          "二重螺旋",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117500792543987",
+          "bilibili:BV11NHL66ELg"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/9616a1188db2bf2c6597d830a0bc2c87d1e0f4c9.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 希罗",
+            "label": "关键词 · 二重螺旋 希罗"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "3546904627513999",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 希罗",
+      "article": {
+        "id": "6700f7f5c2c92b19b91a",
+        "title": "假如二重螺旋是一款格斗游戏",
+        "url": "https://www.bilibili.com/video/av117500725434336",
+        "author": "smile星宇",
+        "published": "Sun, 25 Oct 2026 09:04:05 GMT",
+        "published_at": "2026-10-25T09:04:05+00:00",
+        "excerpt": "参考视频：BV1ozn668Emc",
+        "duration_seconds": 42,
+        "tags": [
+          "二重螺旋创作者激励计划",
+          "二重螺旋",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117500725434336",
+          "bilibili:BV1R2H56XELx"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/fd6bed1696ed32b34a0b0b3983c80439c9af0f9f.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 希罗",
+            "label": "关键词 · 二重螺旋 希罗"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "399617651",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "参考视频：BV1ozn668Emc",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 希罗",
+      "article": {
+        "id": "4afa1d61a77257d5ceb3",
+        "title": "奉香群英映人心",
+        "url": "https://www.bilibili.com/video/av117500708652596",
+        "author": "萌新小屋",
+        "published": "Sun, 25 Oct 2026 08:59:39 GMT",
+        "published_at": "2026-10-25T08:59:39+00:00",
+        "excerpt": "",
+        "duration_seconds": 7325,
+        "tags": [
+          "二重螺旋创作者激励计划",
+          "活动剧情",
+          "二重螺旋",
+          "记录",
+          "单机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117500708652596",
+          "bilibili:BV1XUH56HE7D"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/77c4da6d34ef20f95990ef5258a382f87759a37f.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 希罗",
+            "label": "关键词 · 二重螺旋 希罗"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "121929614",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 希罗",
+      "article": {
+        "id": "f234ce395819c14579bf",
+        "title": "1.7入坑指南，二重真的要火？【二重螺旋】",
+        "url": "https://www.bilibili.com/video/av117500524105143",
+        "author": "老顾不烦",
+        "published": "Sun, 25 Oct 2026 08:15:49 GMT",
+        "published_at": "2026-10-25T08:15:49+00:00",
+        "excerpt": "老秦是真爱二重，这期基本都是他策划的 你懂的你懂的你懂的你懂的你懂的你懂的",
+        "duration_seconds": 526,
+        "tags": [
+          "二重螺旋创作者激励计划",
+          "1.7版本",
+          "萌新",
+          "入坑指南",
+          "二重螺旋",
+          "游戏测评",
+          "二次元",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117500524105143",
+          "bilibili:BV1TVHG6BETw"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/44d8038c671818024fbbad7d22ac6555f72f8809.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 希罗",
+            "label": "关键词 · 二重螺旋 希罗"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "240650947",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "老秦是真爱二重，这期基本都是他策划的 你懂的你懂的你懂的你懂的你懂的你懂的",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 希罗",
+      "article": {
+        "id": "9520c761d4254da6596b",
+        "title": "球星卡分享，韦尔值得入手吗？",
+        "url": "https://www.bilibili.com/video/av115689323044526",
+        "author": "泡芙和霍小德",
+        "published": "Tue, 09 Dec 2025 11:20:25 GMT",
+        "published_at": "2025-12-09T11:20:25+00:00",
+        "excerpt": "球星卡分享，韦尔值得入手吗？",
+        "duration_seconds": 297,
+        "tags": [
+          "阿德巴约",
+          "nba",
+          "球星卡",
+          "二重螺旋公测创作者激励计划",
+          "必剪创作",
+          "篮球",
+          "热火",
+          "希罗",
+          "韦尔",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av115689323044526",
+          "bilibili:BV1x5mnBnEKH"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/f41d1063711a9b1fee7ea0f6765c04f8358d58dc.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 希罗",
+            "label": "关键词 · 二重螺旋 希罗"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "358499272",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "球星卡分享，韦尔值得入手吗？",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "2eaca9989420dc7c87f7",
+        "title": "不是你的恋爱 女二看出男主其实也想继续调查，可是男主死不承认",
+        "url": "https://www.bilibili.com/video/av117502017407345",
+        "author": "紫米葡萄桃",
+        "published": "Sun, 25 Oct 2026 15:00:00 GMT",
+        "published_at": "2026-10-25T15:00:00+00:00",
+        "excerpt": "-",
+        "duration_seconds": 82,
+        "tags": [
+          "徐康俊",
+          "不是你的恋爱",
+          "二重螺旋创作者激励计划",
+          "安恩真",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117502017407345",
+          "bilibili:BV1YcnS6EE8Z"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/753acbd48aca9ea4cd4330c0702e5ad765eebb1d.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "298664222",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "966558d2156cdd12bc37",
+        "title": "傲雪看国产二次元箱庭动作游戏《星溯》首曝PV：画风像二重螺旋,战斗像魂游,不至于比鸣潮强,特效也太素,角色一点特色都没有，太小众了,今夕是何年",
+        "url": "https://www.bilibili.com/video/av117489149281885",
+        "author": "摸鱼的周日哥",
+        "published": "Fri, 23 Oct 2026 07:57:54 GMT",
+        "published_at": "2026-10-23T07:57:54+00:00",
+        "excerpt": "-",
+        "duration_seconds": 741,
+        "tags": [
+          "手机游戏",
+          "二次元",
+          "星溯",
+          "绝区零up主激励计划",
+          "绝区零",
+          "魂游",
+          "傲雪",
+          "米哈游",
+          "箱庭",
+          "动作游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117489149281885",
+          "bilibili:BV1NHnb65Eg5"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/1d669eeab43444ab9749e793ad8749c6dd39ba13.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "1432667531",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "3ce6734597b670af401d",
+        "title": "建模依旧权威！！",
+        "url": "https://www.bilibili.com/video/av117484166321714",
+        "author": "Starshine刹那",
+        "published": "Thu, 22 Oct 2026 10:54:09 GMT",
+        "published_at": "2026-10-22T10:54:09+00:00",
+        "excerpt": "素材：二重螺旋 审核大大，运营大大幸苦了，求推荐！！",
+        "duration_seconds": 34,
+        "tags": [
+          "混剪",
+          "gmv",
+          "剪辑",
+          "二次元",
+          "二重螺旋创作者激励计划",
+          "二重螺旋",
+          "同人·手书"
+        ],
+        "source_ids": [
+          "bilibili:av117484166321714",
+          "bilibili:BV1mgnm6YEXA"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/82f6eec01c833b68deb4dd77d36d230bb52c6cb7.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "487763254",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "素材：二重螺旋 审核大大，运营大大幸苦了，求推荐！！",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "f8332f27ffb27022fd0c",
+        "title": "我活着就是为了品鉴这个角色！",
+        "url": "https://www.bilibili.com/video/av117471935728118",
+        "author": "韩力寅",
+        "published": "Tue, 20 Oct 2026 12:08:32 GMT",
+        "published_at": "2026-10-20T12:08:32+00:00",
+        "excerpt": "",
+        "duration_seconds": 363,
+        "tags": [
+          "韩哥",
+          "手游",
+          "二重螺旋行于破晓版本",
+          "黎瑟",
+          "二重螺旋",
+          "沙雕",
+          "逗比",
+          "二次元",
+          "搞笑",
+          "欢乐",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117471935728118",
+          "bilibili:BV1KMnw6MEzf"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/04a93b09d1072c2b566d5833068a090ea106f90c.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "42182603",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "d92bf4e9d501809a03cf",
+        "title": "【苏乙】BLACKPINK - JUMP",
+        "url": "https://www.bilibili.com/video/av117467338771007",
+        "author": "絳色",
+        "published": "Mon, 19 Oct 2026 11:32:46 GMT",
+        "published_at": "2026-10-19T11:32:46+00:00",
+        "excerpt": "模型：二重螺旋/徐大大哟i 动作：NatsumiSan 场景：ChyetYi",
+        "duration_seconds": 156,
+        "tags": [
+          "mod",
+          "舞蹈",
+          "二重螺旋第22只乐园的白兔二创",
+          "动画",
+          "法露西",
+          "苏乙",
+          "芙罗拉",
+          "伊薇",
+          "二重螺旋",
+          "艾达",
+          "mmd·3d"
+        ],
+        "source_ids": [
+          "bilibili:av117467338771007",
+          "bilibili:BV1ktnJ67EQn"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/72cb92bfc2e8924f47460f9264cc4e190b404e50.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "189035137",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "模型：二重螺旋/徐大大哟i 动作：NatsumiSan 场景：ChyetYi",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "6e91c5a0e58fd86b9f33",
+        "title": "「二重螺旋」正在前往周年庆版本",
+        "url": "https://www.bilibili.com/video/av117466936183516",
+        "author": "病娇皎皎",
+        "published": "Mon, 19 Oct 2026 09:51:13 GMT",
+        "published_at": "2026-10-19T09:51:13+00:00",
+        "excerpt": "我喜欢你！",
+        "duration_seconds": 48,
+        "tags": [
+          "二重螺旋创作者激励计划",
+          "二重螺旋",
+          "二次元",
+          "动作游戏",
+          "单机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117466936183516",
+          "bilibili:BV1o6nJ6uEaV"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/b7cc08752305d58847205ca941b0e5e4576203f4.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "294871400",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "我喜欢你！",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "aa5ac77e7e65e523d681",
+        "title": "◉⩌◉隔壁班来了个皎皎！大家都扭不过她！『理理我嘛』【二重螺旋】",
+        "url": "https://www.bilibili.com/video/av117462205008552",
+        "author": "春日野悠闲",
+        "published": "Sun, 18 Oct 2026 13:46:38 GMT",
+        "published_at": "2026-10-18T13:46:38+00:00",
+        "excerpt": "本家~BV1YucCzFEHc 参考：",
+        "duration_seconds": 37,
+        "tags": [
+          "手机游戏",
+          "可爱",
+          "二重螺旋第22只乐园的白兔二创",
+          "手书",
+          "动画",
+          "法露西",
+          "全角色免费",
+          "理理我嘛",
+          "皎皎",
+          "二重螺旋",
+          "同人·手书"
+        ],
+        "source_ids": [
+          "bilibili:av117462205008552",
+          "bilibili:BV1zNn56ZETR"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/7147d636f1b2d15e3d40213db7304418809ad442.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "176809329",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "本家~BV1YucCzFEHc 参考：",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "16b4fba3e45fb434a540",
+        "title": "法露茜的假日",
+        "url": "https://www.bilibili.com/video/av117461852619028",
+        "author": "何丶以笙",
+        "published": "Sun, 18 Oct 2026 12:14:27 GMT",
+        "published_at": "2026-10-18T12:14:27+00:00",
+        "excerpt": "",
+        "duration_seconds": 33,
+        "tags": [
+          "二重螺旋第22只乐园的白兔二创",
+          "法露茜",
+          "二重螺旋",
+          "二创",
+          "网络游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117461852619028",
+          "bilibili:BV1zHn36JEAe"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/810b33a0ba76ba5dcf97c04e22548227939d0b75.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "17755830",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "5c8df586d017c5430d1c",
+        "title": "二游顶级演出！轨道跑酷+场景变换？一致好评的二重螺旋剧情体验",
+        "url": "https://www.bilibili.com/video/av117461668071280",
+        "author": "想抱莉莉娅的云天",
+        "published": "Sun, 18 Oct 2026 12:02:56 GMT",
+        "published_at": "2026-10-18T12:02:56+00:00",
+        "excerpt": "一款有有恐怖氛围的乐园过山车、轨道上跑酷躲避障碍+远程攻击、酒店走廊空间变换、轨道boss战穿插CG、boss战地形变换+钩索躲避的游戏",
+        "duration_seconds": 542,
+        "tags": [
+          "二重螺旋第22只乐园的白兔剧情",
+          "二重螺旋新版本：第22只乐园的白兔",
+          "游戏鉴赏家",
+          "教程攻略",
+          "二重螺旋",
+          "手机游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117461668071280",
+          "bilibili:BV18Bn36BEfR"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/b9e76f1dde30387345f477f7655294875e042b1d.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "74126025",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "一款有有恐怖氛围的乐园过山车、轨道上跑酷躲避障碍+远程攻击、酒店走廊空间变换、轨道boss战穿插CG、boss战地形变换+钩索躲避的游戏",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "d1ebd7e15357f92934de",
+        "title": "这嘴子吃着不烧心",
+        "url": "https://www.bilibili.com/video/av117461231932825",
+        "author": "冰离°",
+        "published": "Sun, 18 Oct 2026 09:38:46 GMT",
+        "published_at": "2026-10-18T09:38:46+00:00",
+        "excerpt": "",
+        "duration_seconds": 43,
+        "tags": [
+          "二重螺旋第22只乐园的白兔二创",
+          "法露茜",
+          "不烧心",
+          "烧心",
+          "二重螺旋",
+          "二创",
+          "翻唱"
+        ],
+        "source_ids": [
+          "bilibili:av117461231932825",
+          "bilibili:BV1rFnG6WE4z"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/306903214c0a1c32485b2f4e49135a95a57403a9.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "22190551",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "e3b38e994d943e5a6eba",
+        "title": "【whiplash】法露茜",
+        "url": "https://www.bilibili.com/video/av117460325899826",
+        "author": "俺牢孙来也",
+        "published": "Sun, 18 Oct 2026 05:49:49 GMT",
+        "published_at": "2026-10-18T05:49:49+00:00",
+        "excerpt": "【模型】：二重螺旋 【场景】：amyang-xyz/深空之眼 【动作】：NatsumiSan 【镜头】：NatsumiSan 【BGM】：whiplash 【工具】：https://reze.design/",
+        "duration_seconds": 185,
+        "tags": [
+          "3d",
+          "二重螺旋第22只乐园的白兔二创",
+          "法露茜",
+          "mmd",
+          "二重螺旋",
+          "mmd·3d"
+        ],
+        "source_ids": [
+          "bilibili:av117460325899826",
+          "bilibili:BV1Tsng6bEcJ"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/53b2f4dc0ce44e6bacb6a7768908316f3429bd72.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "250601973",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "【模型】：二重螺旋 【场景】：amyang-xyz/深空之眼 【动作】：NatsumiSan 【镜头】：NatsumiSan 【BGM】：whiplash 【工具】：https://reze.design/",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "23f433c297a87c181bdd",
+        "title": "喜欢上了他 却一时接受不了他的残缺 ！",
+        "url": "https://www.bilibili.com/video/av117459738694062",
+        "author": "豪豪影视大全",
+        "published": "Sun, 18 Oct 2026 03:19:29 GMT",
+        "published_at": "2026-10-18T03:19:29+00:00",
+        "excerpt": "-",
+        "duration_seconds": 80,
+        "tags": [
+          "影视剪辑",
+          "爱情",
+          "白兔二创",
+          "二重螺旋第22只乐园的白兔二创",
+          "二重螺旋",
+          "小剧场"
+        ],
+        "source_ids": [
+          "bilibili:av117459738694062",
+          "bilibili:BV1VMnM6aEy3"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/f28690c71b62e2073acc23820ab4d0ca8202ee93.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "3546649171331453",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "e3c76187ac18e8be666d",
+        "title": "弟弟被姐姐两招就拿捏了，对这个姐姐崇拜了 ！",
+        "url": "https://www.bilibili.com/video/av117459470255852",
+        "author": "美美影视大全",
+        "published": "Sun, 18 Oct 2026 02:12:46 GMT",
+        "published_at": "2026-10-18T02:12:46+00:00",
+        "excerpt": "-",
+        "duration_seconds": 204,
+        "tags": [
+          "影视剪辑",
+          "二重螺旋创作者激励计划",
+          "二重螺旋",
+          "弟弟",
+          "二创",
+          "哥哥",
+          "攻略",
+          "搞笑",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117459470255852",
+          "bilibili:BV1FYnM6LE22"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/07e364b3e0d7a592b0730a3e752501364836aa5d.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "3493074814634642",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "ed13b3a9948e96e98087",
+        "title": "爸爸跨国陪读，这中国式父子太真实 ？",
+        "url": "https://www.bilibili.com/video/av117459453479373",
+        "author": "美美影视大全",
+        "published": "Sun, 18 Oct 2026 02:07:41 GMT",
+        "published_at": "2026-10-18T02:07:41+00:00",
+        "excerpt": "-",
+        "duration_seconds": 206,
+        "tags": [
+          "影视剪辑",
+          "白兔二创",
+          "二重螺旋第22只乐园的白兔二创",
+          "二重螺旋",
+          "女儿",
+          "父亲",
+          "父母",
+          "爸爸",
+          "小剧场"
+        ],
+        "source_ids": [
+          "bilibili:av117459453479373",
+          "bilibili:BV1wtnM6UEYK"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i1.hdslb.com/bfs/archive/86f8b9759f00e40a2dfdf8951458df8a04048528.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "3493074814634642",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "01d853c2c705ed558fac",
+        "title": "真的太喜欢她的这个气势了～",
+        "url": "https://www.bilibili.com/video/av117459386372406",
+        "author": "咖啡coffee影视大全",
+        "published": "Sun, 18 Oct 2026 01:48:46 GMT",
+        "published_at": "2026-10-18T01:48:46+00:00",
+        "excerpt": "-",
+        "duration_seconds": 193,
+        "tags": [
+          "白兔二创",
+          "二重螺旋第22只乐园的白兔二创",
+          "二重螺旋",
+          "影视剪辑",
+          "小剧场"
+        ],
+        "source_ids": [
+          "bilibili:av117459386372406",
+          "bilibili:BV1VgnM6cEAi"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/856f9d2b768cd8a52c16e1335c22663be4aaa027.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "1852475674",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "869cc732635d1903b882",
+        "title": "他脾气还怪好嘞，要是我就直接走了！",
+        "url": "https://www.bilibili.com/video/av117459302488012",
+        "author": "爱吃花生粒",
+        "published": "Sun, 18 Oct 2026 01:28:57 GMT",
+        "published_at": "2026-10-18T01:28:57+00:00",
+        "excerpt": "-",
+        "duration_seconds": 90,
+        "tags": [
+          "影视剪辑",
+          "攻略",
+          "爱情",
+          "二重螺旋创作者激励计划",
+          "二重螺旋",
+          "二创",
+          "脾气",
+          "小剧场"
+        ],
+        "source_ids": [
+          "bilibili:av117459302488012",
+          "bilibili:BV1u7nM6xE5U"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/0ff9ae29d1bbcdaadaacd04670fb5b229e6bc0b7.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "3461580456987096",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "1eadf15f4fb01b5d4430",
+        "title": "实习生第一天上班就偷懒，师傅可不惯着他！",
+        "url": "https://www.bilibili.com/video/av117459302486350",
+        "author": "爱吃花生粒",
+        "published": "Sun, 18 Oct 2026 01:27:04 GMT",
+        "published_at": "2026-10-18T01:27:04+00:00",
+        "excerpt": "-",
+        "duration_seconds": 194,
+        "tags": [
+          "白兔二创",
+          "二重螺旋第22只乐园的白兔二创",
+          "二重螺旋",
+          "实习生",
+          "影视剪辑",
+          "师傅",
+          "小剧场"
+        ],
+        "source_ids": [
+          "bilibili:av117459302486350",
+          "bilibili:BV1u7nM6xExU"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i2.hdslb.com/bfs/archive/5b6492e39e7c6111c6d3514b3e5937f905695499.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "3461580456987096",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "-",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "5169cdff77c0dbe73b51",
+        "title": "[Warframe]不死流电妹U精单人时光科研和单人U精赛中9999实战",
+        "url": "https://www.bilibili.com/video/av117456534440455",
+        "author": "Wilson霄",
+        "published": "Sat, 17 Oct 2026 13:59:17 GMT",
+        "published_at": "2026-10-17T13:59:17+00:00",
+        "excerpt": "谁说我电妹配卡不行的？黑子说话！！！",
+        "duration_seconds": 4806,
+        "tags": [
+          "二重螺旋第22只乐园的白兔二创",
+          "星际战甲",
+          "录屏",
+          "网络游戏"
+        ],
+        "source_ids": [
+          "bilibili:av117456534440455",
+          "bilibili:BV1jwJi67E8v"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/1f78a30f10d9dd2d8002875336162c8c6e4c2a86.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "1664794234",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "谁说我电妹配卡不行的？黑子说话！！！",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "83ec4fd8812632720ad8",
+        "title": "【艾达】HYO MIN - Nice Body",
+        "url": "https://www.bilibili.com/video/av117456030927347",
+        "author": "絳色",
+        "published": "Sat, 17 Oct 2026 11:38:31 GMT",
+        "published_at": "2026-10-17T11:38:31+00:00",
+        "excerpt": "模型：二重螺旋/徐大大哟i 动作：NatsumiSan 场景：ChyetYi",
+        "duration_seconds": 171,
+        "tags": [
+          "二重螺旋第22只乐园的白兔二创",
+          "法露西",
+          "芙罗拉",
+          "伊薇",
+          "游戏cg",
+          "二重螺旋",
+          "艾达",
+          "mod",
+          "舞蹈",
+          "动画",
+          "mmd·3d"
+        ],
+        "source_ids": [
+          "bilibili:av117456030927347",
+          "bilibili:BV1orJi6UEL5"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/28cdf96284c03e3178871bed15883f228a221996.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "189035137",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "模型：二重螺旋/徐大大哟i 动作：NatsumiSan 场景：ChyetYi",
+        "body_truncated": false
+      }
+    },
+    {
+      "kind": "keyword_search",
+      "key": "二重螺旋 二创",
+      "article": {
+        "id": "c70646bf169500c49212",
+        "title": "你留下的春天",
+        "url": "https://www.bilibili.com/video/av117449504588761",
+        "author": "沂水三生",
+        "published": "Fri, 16 Oct 2026 11:00:00 GMT",
+        "published_at": "2026-10-16T11:00:00+00:00",
+        "excerpt": "图像素材 二重螺旋官方漫画 《流光照影》 BGM 《My Little Garden》",
+        "duration_seconds": 239,
+        "tags": [
+          "二重螺旋第22只乐园的白兔二创",
+          "赛琪",
+          "二重螺旋",
+          "治愈",
+          "音乐",
+          "动画",
+          "日常"
+        ],
+        "source_ids": [
+          "bilibili:av117449504588761",
+          "bilibili:BV1Z3J96AE2M"
+        ],
+        "matched_keywords": [],
+        "parse_warnings": [],
+        "fetched_at": "2026-10-26T00:31:39.689826+08:00",
+        "cover_url": "https://i0.hdslb.com/bfs/archive/24e1774040f4593fb174213a1bdad777f9da2bbc.jpg",
+        "sources": [
+          {
+            "kind": "keyword_search",
+            "key": "二重螺旋 二创",
+            "label": "关键词 · 二重螺旋 二创"
+          }
+        ],
+        "content_type": "video",
+        "is_dynamic": false,
+        "dynamic_id": null,
+        "author_uid": "1626441127",
+        "original_author_uid": null,
+        "images": [],
+        "repost_text": "",
+        "dynamic_contexts": [],
+        "text_available": true,
+        "filter_hits": [],
+        "expiry_basis": null,
+        "body_text": "图像素材 二重螺旋官方漫画 《流光照影》 BGM 《My Little Garden》",
+        "body_truncated": false
+      }
+    }
+  ]
+}

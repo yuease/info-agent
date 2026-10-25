@@ -15,9 +15,16 @@ from urllib.parse import unquote, urlsplit
 from pydantic import ValidationError
 
 from info_agent.preferences import refresh_safe
-from info_agent.schemas import Profile
+from info_agent.collection import collect
+from info_agent.rss import fetch_feed
+from info_agent import jobs
+from info_agent.pool import snapshot
+from info_agent.filtering import catalog
+from info_agent.schemas import Profile, Article
+from info_agent.covers import cover_url
 from info_agent.storage import Store, atomic_write, dump
-from info_agent.workflow import ROOT, build_briefing, local_now
+from info_agent.workflow import ROOT, build_briefing, local_now, new_run_id
+from info_agent.errors import public_diagnostic, source_public, classify, safe_type, RunFailure
 
 STATIC = Path(__file__).with_name('web_assets')
 
@@ -29,17 +36,22 @@ class RequestError(Exception):
 
 
 class WebApp:
-    def __init__(self, root=ROOT, runner=build_briefing, clock=local_now):
+    def __init__(self, root=ROOT, runner=build_briefing, clock=local_now, collector=collect, fetcher=fetch_feed, model=None):
         self.root = Path(root)
         self.profile_path = self.root / 'briefing_profile.json'
         self.db_path = self.root / 'workspace' / 'info_agent.sqlite3'
         self.runner = runner
+        self.collector,self.fetcher=collector,fetcher
+        self.model=model
+        self.collection_job=None
+        self.scheduler=None
         self.clock = clock
         self.token = secrets.token_urlsafe(32)
         self.lock = threading.RLock()
         self.job = None
 
     def profile(self):
+        with closing(self.store()):pass  # complete any durable setting intent before reading the atomic file
         return Profile.model_validate(json.loads(self.profile_path.read_text(encoding='utf-8-sig')))
 
     def store(self):
@@ -51,6 +63,8 @@ class WebApp:
             p = self.profile()
             job = dict(self.job) if self.job else None
         with closing(self.store()) as s:
+            if s.preferences(p.context)[0] is None:
+                refresh_safe(s,p,self.clock())
             runs = []
             for r in s.db.execute('SELECT * FROM runs ORDER BY created DESC,rowid DESC LIMIT 100'):
                 d = json.loads(r['data'])
@@ -58,11 +72,29 @@ class WebApp:
                     current_context=r['context'] == p.context,
                     count=s.db.execute('SELECT count(*) FROM recommendations WHERE run=?', (r['id'],)).fetchone()[0],
                     candidates=d.get('metrics', {}).get('candidate_count', len(d.get('articles', []))),
-                    preview=d.get('preview', False), keywords=d.get('profile', {}).get('keywords', [])))
+                    operation=d.get('operation','legacy'),
+                    preview=d.get('preview', False), keywords=d.get('profile', {}).get('keywords', []),
+                    source_labels=d.get('source_labels',[]), **public_diagnostic(d)))
             version, weights = s.preferences(p.context)
             stats = s.feedback_stats(p.context)
+            source_status = s.source_status(p)
+            pool=snapshot(s,p,self.clock())
+            db_job=jobs.latest(s,'generate')
+            if not (job and db_job and job['id']==db_job['id'] and job['status']!='running'):
+                job=db_job or job
+            collection_job=jobs.latest(s,'collect')
+            local_collection=self.collection_job
+            if local_collection and collection_job and local_collection['id']==collection_job['id'] and local_collection['status']!='running':
+                collection_job=dict(local_collection)
+            collection_job=collection_job or local_collection
         return dict(profile=p.model_dump(), runs=runs, preferences=dict(version=version, weights=weights),
-                    stats=stats, job=job, token=self.token)
+                    stats=stats, job=job, token=self.token, source_status=source_status,
+                    collection_job=collection_job,
+                    pool={k:pool[k] for k in ('eligible_count','last_collected_at','filter_counts')},
+                    filter_rule_catalog=catalog(),
+                    filter_warnings=[dict(id=r.id,reason='rule_or_version_unavailable') for r in p.filters.rules if r.enabled and not any(c['id']==r.id and c['version']==r.version for c in catalog())],
+                    capabilities=dict(sources_v1=True,cover_images_v1=True,stable_preferences_v1=True,
+                                      sources_v2=True,filter_rules_v1=True,candidate_pool_v1=True))
 
     def detail(self, run_id):
         p = self.profile()
@@ -76,61 +108,112 @@ class WebApp:
             picks = []
             for row in s.db.execute('SELECT * FROM recommendations WHERE run=? ORDER BY position', (run_id,)):
                 item = json.loads(row['data'])
+                item['article'] = Article.model_validate(item['article']).model_dump()
                 item.update(recommendation_id=row['id'], position=row['position'], feedback=feedback.get(row['id']))
                 picks.append(item)
             candidates = d.get('articles', [])
             if 'articles' not in d:
                 candidates = [json.loads(x[0]) for x in s.db.execute('SELECT data FROM candidates WHERE run=? ORDER BY rowid', (run_id,))]
+            candidates = [dict(a,cover_url=cover_url(a.get('cover_url')),sources=a.get('sources',[])) for a in candidates]
             return dict(id=run_id, created=r['created'], status=r['status'], picks=picks, candidates=candidates,
                         current_context=r['context'] == p.context, metrics=d.get('metrics', {}),
                         failures=d.get('failures', []), report=d.get('report', ''),
                         failed_stage=d.get('failed_stage'), error_type=d.get('error_type'),
                         preference_update_error=d.get('preference_update_error'),
-                        keywords=d.get('profile', {}).get('keywords', []))
+                        source_results=[source_public(x) for x in d.get('source_results',[])], empty_reason=d.get('empty_reason'),
+                        operation=d.get('operation','legacy'),
+                        keywords=d.get('profile', {}).get('keywords', []),
+                        briefing_saved=d.get('briefing_saved', r['status'] in ('completed','empty')),
+                        export_failed=d.get('export_failed',False), **public_diagnostic(d))
 
     def save_profile(self, body):
+        from info_agent.settings_service import SettingsService
+        from info_agent.core_errors import CoreError
         with self.lock:
-            if self.job and self.job['status'] == 'running':
-                raise RequestError('正在生成简报，请完成后再保存设置。', 409)
-            current = self.profile()
-            if body.get('expected') != current.model_dump():
-                raise RequestError('设置已在其他窗口修改，请刷新后重试。', 409)
-            allowed = {'keywords', 'interests', 'max_picks', 'max_duration_seconds',
-                       'exploration_ratio', 'history_cooldown_days', 'snooze_days'}
-            patch = body.get('changes', {})
-            if not isinstance(patch, dict) or set(patch) - (allowed | {'learning_enabled'}):
-                raise RequestError('设置字段无效。')
-            data = current.model_dump()
-            data.update({k: v for k, v in patch.items() if k in allowed})
-            if 'learning_enabled' in patch:
-                data['learning']['enabled'] = patch['learning_enabled']
-            updated = Profile.model_validate(data)
-            atomic_write(self.profile_path, dump(updated.model_dump()) + '\n')
-            return dict(changed_context=current.context != updated.context)
+            if self.job and self.job['status']=='running':raise RequestError('正在生成简报，请完成后再保存设置。',409)
+            try:
+                change=SettingsService(self.root,self.profile_path,self.clock).web_update(body)
+                return dict(changed_context=change.before.learning_context!=change.after.learning_context,
+                    change_id=change.change_id,version=change.after.version,goal_id=change.after.goal_id)
+            except CoreError as exc:
+                message='设置已在其他窗口修改，请刷新后重试。' if exc.code=='SETTINGS_CONFLICT' else exc.message
+                raise RequestError(message,409 if exc.code in ('SETTINGS_CONFLICT','SETTINGS_BUSY','PREFERENCE_UNDO_CONFLICT') else 400) from None
 
-    def start_run(self, preview):
-        if not isinstance(preview, bool):
-            raise RequestError('运行类型无效。')
-        with self.lock:
-            if self.job and self.job['status'] == 'running':
-                raise RequestError('已有任务正在运行，请稍候。', 409)
-            p = self.profile()
-            self.job = dict(id=uuid.uuid4().hex, status='running', preview=preview,
-                            started=self.clock().isoformat(), run_id=None, error=None)
-            job = dict(self.job)
-            threading.Thread(target=self._run, args=(p, preview), daemon=True).start()
-            return job
+    def start_run(self,preview):
+        if not isinstance(preview,bool):raise RequestError('运行类型无效。')
+        if preview and self.runner is build_briefing:return self.start_collect()
+        return self._start('generate',preview)
 
-    def _run(self, p, preview):
+    def start_generate(self):return self._start('generate',False)
+
+    def start_collect(self,scheduled=False):return self._start('collect',True,scheduled=scheduled)
+
+    def _start(self,kind,preview,scheduled=False):
+        with self.lock,closing(self.store()) as s:
+            p=self.profile();now=self.clock()
+            if scheduled and not p.collection.enabled:return None
+            job=dict(id=uuid.uuid4().hex,status='running',preview=preview,operation=kind,
+                     started=now.isoformat(),run_id=new_run_id(now),record_available=False,error=None)
+            owner=jobs.claim(s,kind,job,now,scheduled=scheduled,interval=p.collection.interval_minutes)
+            if owner is None:
+                if scheduled:return None
+                raise RequestError('同类任务已在本机服务中运行，请稍候。',409)
+            attr='collection_job' if kind=='collect' else 'job'
+            setattr(self,attr,job)
+            try:threading.Thread(target=self._run,args=(p,kind,preview,dict(job),owner),daemon=True).start()
+            except Exception:
+                from info_agent.errors import diagnostic
+                job.update(status='failed',**diagnostic('UNCLASSIFIED'))
+                with s.db:s.db.execute('UPDATE task_jobs SET data=? WHERE id=?',(dump(job),job['id']))
+                with jobs.Lease(self.db_path,kind,owner):pass
+                raise RequestError('任务未能启动，请查看本次任务记录或重启本地服务。',500) from None
+            return dict(job)
+
+    def _run(self,p,kind,preview,job,owner):
+        run_id=job['run_id'];attr='collection_job' if kind=='collect' else 'job'
+        try:
+            with jobs.Lease(self.db_path,kind,owner),closing(self.store()) as s:
+                if kind=='collect':
+                    result=self.collector(p.model_dump(),store=s,clock=self.clock,run_id=run_id,fetcher=self.fetcher)
+                else:
+                    kwargs=dict(preview=preview,store=s,clock=self.clock,run_id=run_id)
+                    if self.runner is build_briefing:kwargs.update(from_pool=True,model=self.model)
+                    result=self.runner(p.model_dump(),**kwargs).invoke({})
+            update=dict(status='completed',run_id=result['run_id'],record_available=True)
+            if kind=='collect':
+                update['source_results']=[source_public(r) for r in result.get('source_results',[])]
+                if result.get('failures'):update['warning']='部分来源采集失败，其他已取得内容已保存；请查看本次采集记录。'
+        except Exception as exc:
+            detail=exc.diagnosis if isinstance(exc,RunFailure) and exc.run_id==run_id else classify(exc,'unknown')
+            update=dict(status='failed',run_id=run_id,error_type=safe_type(exc),**public_diagnostic(detail))
+            try:
+                with closing(self.store()) as s:row=s.db.execute('SELECT status,data FROM runs WHERE id=?',(run_id,)).fetchone()
+                update['record_available']=bool(row)
+                if row:
+                    data=json.loads(row['data'])
+                    update['source_results']=[source_public(r) for r in data.get('source_results',[])]
+                    update.update(public_diagnostic(data),failed_stage=data.get('failed_stage'),
+                        error_type=data.get('error_type',update['error_type']),briefing_saved=data.get('briefing_saved',row['status'] in ('completed','empty')))
+                    if row['status'] in ('completed','empty','preview','collection'):
+                        update.update(status='completed',warning=update.get('error_message'))
+            except Exception:update['record_available']=False
+            update['error']=update.get('error_message')
+        job.update(update,finished=self.clock().isoformat())
         try:
             with closing(self.store()) as s:
-                result = self.runner(p.model_dump(), preview=preview, store=s, clock=self.clock).invoke({})
-            update = dict(status='completed', run_id=result['run_id'])
-        except Exception as exc:
-            # Never serialize provider exceptions, URLs or credentials to the UI.
-            update = dict(status='failed', error=f'运行未完成（{type(exc).__name__}）。请检查 RSSHub 连接和模型配置，并查看历史记录。')
+                with s.db:s.db.execute('UPDATE task_jobs SET data=? WHERE id=?',(dump(job),job['id']))
+        except Exception:pass
         with self.lock:
-            self.job.update(update, finished=self.clock().isoformat())
+            current=getattr(self,attr)
+            if current and current['id']==job['id']:current.update(job)
+
+    def start_scheduler(self):
+        with self.lock:
+            if self.scheduler is None:
+                self.scheduler=jobs.Scheduler(self);self.scheduler.start()
+
+    def close(self):
+        if self.scheduler:self.scheduler.close()
 
     def feedback(self, body, undo=False):
         with self.lock:
@@ -178,7 +261,7 @@ def make_server(app, port=8765):
             self.send_header('Cache-Control', 'no-store')
             self.send_header('X-Content-Type-Options', 'nosniff')
             self.send_header('Referrer-Policy', 'no-referrer')
-            self.send_header('Content-Security-Policy', "default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'")
+            self.send_header('Content-Security-Policy', "default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self' data: https://*.hdslb.com https://*.biliimg.com; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'")
             for k, v in (extra or {}).items():
                 self.send_header(k, v)
             self.end_headers()
@@ -204,6 +287,10 @@ def make_server(app, port=8765):
                     body = json.loads(self.rfile.read(size))
                     if not isinstance(body, dict):
                         raise RequestError('请求格式无效。')
+                    if path == '/api/collect':
+                        return self.send(202,app.start_collect())
+                    if path == '/api/generate':
+                        return self.send(202,app.start_generate())
                     if path == '/api/run':
                         return self.send(202, app.start_run(body.get('preview', False)))
                     if path == '/api/profile':
@@ -233,7 +320,7 @@ def make_server(app, port=8765):
             except RequestError as exc:
                 self.send(exc.status, {'error': str(exc)})
             except ValidationError:
-                self.send(400, {'error': '配置不合法：关键词 1–5 个，推荐数 1–10，时长须为正数，探索比例 0–100%。'})
+                self.send(400, {'error': '配置不合法：请检查来源范围、唯一数字 UID、关键词及过滤规则；采集间隔为30/60/120/360分钟，动态有效期为24/72/168小时，推荐数1–10，时长须为正数。'})
             except (ValueError, TypeError):
                 self.send(400, {'error': '输入内容无效，请检查后重试。'})
             except Exception:
@@ -245,7 +332,15 @@ def make_server(app, port=8765):
         def do_POST(self):
             self.dispatch(write=True)
 
-    return ThreadingHTTPServer(('127.0.0.1', port), Handler)
+    class LocalServer(ThreadingHTTPServer):
+        def server_close(self):
+            app.close()
+            super().server_close()
+    server=LocalServer(('127.0.0.1',port),Handler)
+    with closing(app.store()) as store:
+        jobs.recover_dead(store,app.clock())  # initialize/recover before timer and HTTP threads race
+    app.start_scheduler()
+    return server
 
 
 def main():

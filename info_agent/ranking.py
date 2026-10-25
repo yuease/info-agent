@@ -1,5 +1,6 @@
 """Shortlist validation and bounded ranking, independent of model transport."""
 import math
+from info_agent.errors import DiagnosedError
 from info_agent.preferences import features, duration_feature
 
 
@@ -14,8 +15,13 @@ def shortlist_limit(profile, count):
 def validate_selection(selection, articles, limit):
     ids = {a['id'] for a in articles}
     picks = [p.id for p in selection.picks]
-    if len(picks) > limit or len(set(picks)) != len(picks) or not set(picks) <= ids:
-        raise ValueError('模型选择了重复、未知或过量条目')
+    details = dict(actual_count=len(picks),allowed_count=limit,unknown_id_count=len(set(picks)-ids),duplicate_count=len(picks)-len(set(picks)))
+    if details['duplicate_count']:
+        raise DiagnosedError('MODEL_DUPLICATE_IDS',details)
+    if details['unknown_id_count']:
+        raise DiagnosedError('MODEL_UNKNOWN_IDS',details)
+    if len(picks)>limit:
+        raise DiagnosedError('MODEL_SHORTLIST_LIMIT',details)
 
 
 def bounded_order(picks, articles, weights, profile):

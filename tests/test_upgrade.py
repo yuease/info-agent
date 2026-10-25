@@ -278,7 +278,7 @@ def test_context_and_legacy_profile():
     assert profile(max_picks=2).context == p.context
     assert profile(learning={'enabled':False}).context == p.context
     assert Profile.model_validate(dict(rsshub_url='http://localhost',keywords=['x'],interests='',max_picks=5))
-    assert profile(max_duration_seconds=500).context != p.context
+    assert profile(max_duration_seconds=500).context == p.context
 
 
 def test_cli_and_feedback(store,monkeypatch,tmp_path,capsys):

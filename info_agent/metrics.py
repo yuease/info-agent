@@ -8,3 +8,6 @@ def record_request(request):
     counter = attempts.get()
     if counter is not None:
         counter['http_attempts'] += 1
+        if counter.get('on_request'):
+            try:counter['on_request'](counter)
+            except Exception:pass

@@ -1,0 +1,620 @@
+{
+  "outcomes": {
+    "no_match": 1,
+    "insufficient_evidence": 3,
+    "found": 5,
+    "model_failed": 3
+  },
+  "model_calls": 11,
+  "http_attempts": 11,
+  "tokens": {
+    "input_tokens": 29429,
+    "output_tokens": 1956,
+    "total_tokens": 31385
+  },
+  "diagnosis": [
+    {
+      "n": 1,
+      "outcome": "no_match",
+      "error": null,
+      "details": null,
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 0,
+        "http_attempts": 0,
+        "rss_requests": 0,
+        "actual_requests": 0,
+        "elapsed_seconds": 0.031000000002677552,
+        "tokens": null,
+        "origin_metrics": null
+      }
+    },
+    {
+      "n": 2,
+      "outcome": "insufficient_evidence",
+      "error": null,
+      "details": null,
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 1.8909999999959837,
+        "tokens": {
+          "input_tokens": 1144,
+          "output_tokens": 32,
+          "total_tokens": 1176,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      }
+    },
+    {
+      "n": 3,
+      "outcome": "found",
+      "error": null,
+      "details": null,
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 1.264999999999418,
+        "tokens": {
+          "input_tokens": 7591,
+          "output_tokens": 228,
+          "total_tokens": 7819,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      }
+    },
+    {
+      "n": 4,
+      "outcome": "found",
+      "error": null,
+      "details": null,
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 1.264999999999418,
+        "tokens": {
+          "input_tokens": 1771,
+          "output_tokens": 150,
+          "total_tokens": 1921,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      },
+      "input_summary": [
+        {
+          "id": "cd8aeba14ff052bdb78f",
+          "title": "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+          "fields": [
+            "title",
+            "tags[4]",
+            "tags[1]",
+            "tags[2]",
+            "tags[3]",
+            "tags[5]"
+          ],
+          "spans": [
+            "【二重螺旋1.7】7溯止流戏剧高层速刷实战分享，1分58秒！",
+            "止流速刷",
+            "止流输出手法",
+            "止流七溯",
+            "止流7溯",
+            "止流魔之楔"
+          ],
+          "duration_present": false
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "outcome": "model_failed",
+      "error": "MODEL_UNKNOWN_IDS",
+      "details": {
+        "actual_count": 2,
+        "allowed_count": 5,
+        "unknown_id_count": 1,
+        "duplicate_count": 0
+      },
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 1.3289999999979045,
+        "tokens": {
+          "input_tokens": 2141,
+          "output_tokens": 203,
+          "total_tokens": 2344,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      }
+    },
+    {
+      "n": 6,
+      "outcome": "found",
+      "error": null,
+      "details": null,
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 1.7819999999992433,
+        "tokens": {
+          "input_tokens": 1190,
+          "output_tokens": 130,
+          "total_tokens": 1320,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      }
+    },
+    {
+      "n": 7,
+      "outcome": "found",
+      "error": null,
+      "details": null,
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 1.0319999999992433,
+        "tokens": {
+          "input_tokens": 1831,
+          "output_tokens": 139,
+          "total_tokens": 1970,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      }
+    },
+    {
+      "n": 8,
+      "outcome": "insufficient_evidence",
+      "error": null,
+      "details": null,
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 0.625,
+        "tokens": {
+          "input_tokens": 1137,
+          "output_tokens": 32,
+          "total_tokens": 1169,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      },
+      "input_summary": [
+        {
+          "id": "d92bf4e9d501809a03cf",
+          "title": "【苏乙】BLACKPINK - JUMP",
+          "fields": [
+            "title",
+            "tags[5]"
+          ],
+          "spans": [
+            "【苏乙】BLACKPINK - JUMP",
+            "苏乙"
+          ],
+          "duration_present": false
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "outcome": "found",
+      "error": null,
+      "details": null,
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 1.360000000000582,
+        "tokens": {
+          "input_tokens": 2018,
+          "output_tokens": 214,
+          "total_tokens": 2232,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      },
+      "input_summary": [
+        {
+          "id": "16b4fba3e45fb434a540",
+          "title": "法露茜的假日",
+          "fields": [
+            "title",
+            "tags[0]",
+            "tags[1]",
+            "tags[2]"
+          ],
+          "spans": [
+            "法露茜的假日",
+            "二重螺旋第22只乐园的白兔二创",
+            "法露茜",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "d1ebd7e15357f92934de",
+          "title": "这嘴子吃着不烧心",
+          "fields": [
+            "tags[0]",
+            "tags[1]",
+            "tags[4]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "法露茜",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "outcome": "model_failed",
+      "error": "MODEL_OUTPUT_BUDGET",
+      "details": {},
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 2.547000000005937,
+        "tokens": {
+          "input_tokens": 8101,
+          "output_tokens": 537,
+          "total_tokens": 8638,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      },
+      "input_summary": [
+        {
+          "id": "aa5ac77e7e65e523d681",
+          "title": "◉⩌◉隔壁班来了个皎皎！大家都扭不过她！『理理我嘛』【二重螺旋】",
+          "fields": [
+            "tags[2]",
+            "title",
+            "tags[9]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "◉⩌◉隔壁班来了个皎皎！大家都扭不过她！『理理我嘛』【二重螺旋】",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "d92bf4e9d501809a03cf",
+          "title": "【苏乙】BLACKPINK - JUMP",
+          "fields": [
+            "tags[2]",
+            "body_text",
+            "tags[8]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "模型：二重螺旋/徐大大哟i 动作：NatsumiSan 场景：ChyetYi",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "16b4fba3e45fb434a540",
+          "title": "法露茜的假日",
+          "fields": [
+            "tags[0]",
+            "tags[2]",
+            "tags[3]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "二重螺旋",
+            "二创"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "d1ebd7e15357f92934de",
+          "title": "这嘴子吃着不烧心",
+          "fields": [
+            "tags[0]",
+            "tags[4]",
+            "tags[5]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "二重螺旋",
+            "二创"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "e3b38e994d943e5a6eba",
+          "title": "【whiplash】法露茜",
+          "fields": [
+            "tags[1]",
+            "body_text",
+            "tags[4]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "【模型】：二重螺旋 【场景】：amyang-xyz/深空之眼 【动作】：NatsumiSan 【镜头】：NatsumiSan 【BGM】：whiplash 【工具】：https:",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "23f433c297a87c181bdd",
+          "title": "喜欢上了他 却一时接受不了他的残缺 ！",
+          "fields": [
+            "tags[3]",
+            "tags[2]",
+            "tags[4]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "白兔二创",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "e3c76187ac18e8be666d",
+          "title": "弟弟被姐姐两招就拿捏了，对这个姐姐崇拜了 ！",
+          "fields": [
+            "tags[1]",
+            "tags[4]",
+            "tags[2]"
+          ],
+          "spans": [
+            "二重螺旋创作者激励计划",
+            "二创",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "ed13b3a9948e96e98087",
+          "title": "爸爸跨国陪读，这中国式父子太真实 ？",
+          "fields": [
+            "tags[2]",
+            "tags[1]",
+            "tags[3]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "白兔二创",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "01d853c2c705ed558fac",
+          "title": "真的太喜欢她的这个气势了～",
+          "fields": [
+            "tags[1]",
+            "tags[0]",
+            "tags[2]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "白兔二创",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "869cc732635d1903b882",
+          "title": "他脾气还怪好嘞，要是我就直接走了！",
+          "fields": [
+            "tags[3]",
+            "tags[5]",
+            "tags[4]"
+          ],
+          "spans": [
+            "二重螺旋创作者激励计划",
+            "二创",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "1eadf15f4fb01b5d4430",
+          "title": "实习生第一天上班就偷懒，师傅可不惯着他！",
+          "fields": [
+            "tags[1]",
+            "tags[0]",
+            "tags[2]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "白兔二创",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "5169cdff77c0dbe73b51",
+          "title": "[Warframe]不死流电妹U精单人时光科研和单人U精赛中9999实战",
+          "fields": [
+            "tags[0]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "83ec4fd8812632720ad8",
+          "title": "【艾达】HYO MIN - Nice Body",
+          "fields": [
+            "tags[0]",
+            "body_text",
+            "tags[5]"
+          ],
+          "spans": [
+            "二重螺旋第22只乐园的白兔二创",
+            "模型：二重螺旋/徐大大哟i 动作：NatsumiSan 场景：ChyetYi",
+            "二重螺旋"
+          ],
+          "duration_present": false
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "outcome": "model_failed",
+      "error": "MODEL_QUOTE_MISMATCH",
+      "details": {},
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 1.2340000000040163,
+        "tokens": {
+          "input_tokens": 1552,
+          "output_tokens": 259,
+          "total_tokens": 1811,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      },
+      "input_summary": [
+        {
+          "id": "82721bf0b7d77dcdd86c",
+          "title": "挺烧心的！二重螺旋1.7mod副本改动，刷取窍门！灾厄武器刷取推荐",
+          "fields": [
+            "author",
+            "author"
+          ],
+          "spans": [
+            "GTEW的游戏小仓库",
+            "GTEW的游戏小仓库"
+          ],
+          "duration_present": false
+        },
+        {
+          "id": "cf7d8aab7916ac488445",
+          "title": "不烧心的~二重螺旋1.7全角色刷取、关键队伍mod配装推荐",
+          "fields": [
+            "author",
+            "author"
+          ],
+          "spans": [
+            "GTEW的游戏小仓库",
+            "GTEW的游戏小仓库"
+          ],
+          "duration_present": false
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "outcome": "insufficient_evidence",
+      "error": null,
+      "details": null,
+      "metrics": {
+        "cache_hit": false,
+        "replayed": false,
+        "logical_model_calls": 1,
+        "http_attempts": 1,
+        "rss_requests": 0,
+        "actual_requests": 1,
+        "elapsed_seconds": 0.5780000000013388,
+        "tokens": {
+          "input_tokens": 953,
+          "output_tokens": 32,
+          "total_tokens": 985,
+          "input_token_details": {
+            "cache_read": 512
+          },
+          "output_token_details": {}
+        },
+        "origin_metrics": null
+      },
+      "input_summary": [
+        {
+          "id": "c70646bf169500c49212",
+          "title": "你留下的春天",
+          "fields": [
+            "title"
+          ],
+          "spans": [
+            "你留下的春天"
+          ],
+          "duration_present": false
+        }
+      ]
+    }
+  ]
+}

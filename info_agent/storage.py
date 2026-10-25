@@ -49,12 +49,21 @@ def process_alive(pid):
 
 
 class Store:
-    def __init__(self, path, output=None):
+    def __init__(self, path, output=None, clock=None, rebuild_preferences=True):
         path = Path(path)
         path.parent.mkdir(parents=True, exist_ok=True)
         self.output = Path(output or path.parent / 'briefings')
         self.db = sqlite3.connect(path, timeout=5)
         self.db.row_factory = sqlite3.Row
+        has_runs = self.db.execute("SELECT 1 FROM sqlite_master WHERE name='runs'").fetchone()
+        self.migration_backup = None
+        migrated_schema = self.db.execute("SELECT 1 FROM sqlite_master WHERE name='context_migrations'").fetchone()
+        pool_schema = self.db.execute("SELECT 1 FROM sqlite_master WHERE name='pool_items'").fetchone()
+        agent_schema=self.db.execute("SELECT 1 FROM sqlite_master WHERE name='agent_requests'").fetchone()
+        if has_runs and (not migrated_schema or not pool_schema or not agent_schema):
+            # Complete online backup before any schema/data mutation; unique name avoids overwriting.
+            self.migration_backup = path.with_name(path.name + ('.pre-stable-' if not migrated_schema else '.pre-pool-' if not pool_schema else '.pre-agent-') + uuid.uuid4().hex[:10] + '.sqlite3')
+            self.backup(self.migration_backup)
         self.db.executescript('''
         PRAGMA foreign_keys=ON;
         PRAGMA journal_mode=WAL;
@@ -70,11 +79,36 @@ class Store:
           context TEXT, created TEXT, data TEXT);
         CREATE TABLE IF NOT EXISTS preference_heads(context TEXT PRIMARY KEY, version INTEGER REFERENCES preference_snapshots(version));
         CREATE TABLE IF NOT EXISTS preference_evidence(version INTEGER REFERENCES preference_snapshots(version), feature TEXT, data TEXT);
-        PRAGMA user_version=1;
         ''')
         if 'pinned' not in {r[1] for r in self.db.execute('PRAGMA table_info(preference_heads)')}:
             self.db.execute('ALTER TABLE preference_heads ADD COLUMN pinned INTEGER NOT NULL DEFAULT 0')
             self.db.commit()
+        from info_agent.migrations import migrate
+        try:
+            migrate(self.db)
+            from info_agent.pool import migrate_pool
+            migrate_pool(self.db)
+            from info_agent.agent_migrations import migrate_agent
+            migrate_agent(self.db)
+            from info_agent.settings_service import recover_pending
+            recover_pending(self)
+        except Exception:
+            self.db.close()
+            raise
+        # Rebuild every attributable old goal, not just the profile currently open in the UI.
+        # Never combine old weight snapshots. Failure stays retryable at next open.
+        from info_agent.schemas import Profile
+        from info_agent.preferences import refresh_safe, SHANGHAI
+        self.migration_rebuilds = []
+        targets = self.db.execute('''SELECT DISTINCT m.stable_context FROM context_migrations m
+            LEFT JOIN preference_heads h ON h.context=m.stable_context WHERE h.context IS NULL
+            AND m.original_context!=m.stable_context''').fetchall() if rebuild_preferences else []
+        for target in targets:
+            row = self.db.execute('SELECT data FROM runs WHERE context=? LIMIT 1',(target[0],)).fetchone()
+            profile = Profile.model_validate(json.loads(row[0])['profile'])
+            now = clock() if clock else datetime.now(SHANGHAI)
+            version, _, error = refresh_safe(self,profile,now)
+            self.migration_rebuilds.append(dict(context=target[0],version=version,error=error))
 
     def close(self):
         self.db.close()
@@ -95,6 +129,8 @@ class Store:
         with self.db:
             self.db.execute('INSERT INTO runs VALUES (?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET status=excluded.status,data=excluded.data',
                             (run_id, context, now.isoformat(), status, dump(data)))
+            from info_agent.agent_migrations import attribute_run
+            attribute_run(self.db,run_id,context,now.isoformat(),data)
             if articles is not None:
                 self.db.executemany('INSERT OR REPLACE INTO candidates VALUES (?,?,?)',
                                     [(run_id, a['id'], dump(a)) for a in articles])
@@ -105,27 +141,66 @@ class Store:
                     self.db.execute('INSERT OR IGNORE INTO recommendations VALUES (?,?,?,?,?)',
                                     (run_id + ':' + str(i), run_id, p['id'], i, dump(snapshot)))
 
+    def belongs(self, run_id, profile):
+        row = self.db.execute('SELECT context FROM runs WHERE id=?',(run_id,)).fetchone()
+        return bool(row and row[0] == profile.context)
+
+    def record_source_check(self, base_url, ref, status, now, *, profile=None, count=0, error_code=None):
+        with self.db:
+            self.db.execute('INSERT OR REPLACE INTO source_checks VALUES (?,?,?,?,?)',
+                            (base_url,ref['kind'],ref['key'],status,now.isoformat()))
+            if profile is not None:
+                from info_agent.pool import namespace
+                from info_agent.agent_migrations import observation
+                observation(self.db,namespace(profile),ref,status,now,count,error_code)
+
+    def source_status(self, profile):
+        source=profile.source_plan.following
+        kind='following_videos' if source.scope=='videos' else 'following_dynamics'
+        row=self.db.execute('SELECT status,checked FROM source_checks WHERE base_url=? AND kind=? AND key=?',
+            (profile.rsshub_url,kind,source.uid)).fetchone()
+        statuses={'ok':'ready','empty':'ready','auth_required':'missing_credentials','auth_expired':'auth_expired','failed':'error'}
+        return [dict(kind=kind,key=source.uid,status='disabled' if not source.enabled else statuses.get(row['status'],'unknown') if row else 'unknown',
+                     last_checked=row['checked'] if row else None)]
+
     def export(self, run_id):
         row = self.db.execute('SELECT * FROM runs WHERE id=?', (run_id,)).fetchone()
         data = json.loads(row['data'])
+        from info_agent.errors import public_diagnostic, source_public
+        safe_error = public_diagnostic(data)
+        for key in ('error_code','error_message','error_details'):
+            data.pop(key,None)
+        data.update(safe_error)
+        if 'source_results' in data:
+            data['source_results'] = [source_public(x) for x in data['source_results']]
+        recovered = data.get('export_failed') is True
+        if recovered:
+            data.update(export_failed=False, export_recovered=True)
+            data.update(public_diagnostic(data))
         directory = self.output / run_id
         atomic_write(directory / 'candidates.json', dump([json.loads(r[0]) for r in self.db.execute(
             'SELECT data FROM candidates WHERE run=? ORDER BY rowid', (run_id,))]))
         atomic_write(directory / 'run.json', dump(dict(data, status=row['status'])))
         if row['status'] in ('completed', 'empty') and 'report' in data:
             atomic_write(directory / 'briefing.md', data['report'])
+        if recovered:
+            # Only clear the outstanding warning after every output has been written.
+            with self.db:
+                self.db.execute('UPDATE runs SET data=? WHERE id=?',(dump(data),run_id))
 
     def recover(self):
         # Only committed runs are published. In-flight runs are never promoted.
         for row in self.db.execute("SELECT * FROM runs WHERE status IN ('started','collected')").fetchall():
             data = json.loads(row['data'])
             if not process_alive(data.get('process_id')):
-                data.update(failed_stage='interrupted', error_type='ProcessInterrupted')
+                from info_agent.errors import diagnostic
+                data.update(failed_stage='interrupted', error_type='ProcessInterrupted',
+                            **diagnostic('PROCESS_INTERRUPTED'))
                 if data.get('metrics', {}).get('logical_model_calls'):
                     data['metrics'].update(http_attempts=None, network_retries=None)
                 with self.db:
                     self.db.execute("UPDATE runs SET status='failed', data=? WHERE id=?", (dump(data), row['id']))
-        for row in self.db.execute("SELECT id FROM runs WHERE status IN ('completed','empty','preview','failed')").fetchall():
+        for row in self.db.execute("SELECT id FROM runs WHERE status IN ('completed','empty','preview','failed','collection')").fetchall():
             self.export(row['id'])
 
     def effective_feedback(self, context):

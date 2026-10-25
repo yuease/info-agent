@@ -24,12 +24,13 @@ def refresh(store, profile, now):
     policy = profile.learning
     latest = {}
     for f in store.effective_feedback(profile.context):
+        if f['value'] == 'later':
+            # A snooze on a later recommendation is not a new interest evaluation.
+            continue
         if f['video'] not in latest or f['seq'] > latest[f['video']]['seq']:
             latest[f['video']] = f
     evidence = defaultdict(list)
     for f in latest.values():
-        if f['value'] == 'later':
-            continue
         article = json.loads(f['snapshot'])['article']
         reason = (f['reason'] or '').strip()
         sign = 1 if f['value'] == 'useful' else -1

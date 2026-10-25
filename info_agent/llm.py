@@ -26,6 +26,7 @@ from langchain_openai import ChatOpenAI
 from info_agent.config import settings
 import httpx
 from info_agent.metrics import record_request
+from info_agent.errors import ModelConfigurationError
 
 
 def _common_kwargs() -> dict[str, Any]:
@@ -41,7 +42,7 @@ def _common_kwargs() -> dict[str, Any]:
 def _build_deepseek() -> ChatDeepSeek:
     """DeepSeek 官方（或自建）端点。base_url 留空时交给 SDK 用默认地址。"""
     if settings.deepseek_api_key is None:
-        raise ValueError("deepseek_api_key 未配置，无法构造 DeepSeek 客户端")
+        raise ModelConfigurationError('MODEL_CONFIG_MISSING')
     kwargs = _common_kwargs()
     if settings.deepseek_base_url:
         kwargs["base_url"] = settings.deepseek_base_url
@@ -60,7 +61,7 @@ def _build_sensenova() -> ChatOpenAI:
     枚举值——所以在网关换模型时，只要改 .env，不用改代码。
     """
     if settings.sensenova_api_key is None:
-        raise ValueError("sensenova_api_key 未配置，无法构造商汤客户端")
+        raise ModelConfigurationError('MODEL_CONFIG_MISSING')
     return ChatOpenAI(
         model=settings.sensenova_model,
         api_key=settings.sensenova_api_key,
@@ -88,7 +89,5 @@ def get_model(provider: str | None = None):
     try:
         builder = _BUILDERS[name]
     except KeyError:
-        raise ValueError(
-            f"未知的 llm_provider：{name!r}，可选 {sorted(_BUILDERS)}"
-        ) from None
+        raise ModelConfigurationError('MODEL_CONFIG_INVALID') from None
     return builder()

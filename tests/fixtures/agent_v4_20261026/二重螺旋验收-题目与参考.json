@@ -1,0 +1,218 @@
+{
+  "frozen_at": "2026-10-26T00:31:39.689826+08:00",
+  "cases": [
+    {
+      "n": 1,
+      "q": "今天有没有二重螺旋希罗的二创更新？",
+      "terms": [
+        "二重螺旋",
+        "希罗"
+      ],
+      "time_range": {
+        "period": "today"
+      },
+      "expected": [],
+      "forbidden": [],
+      "expect": "no_match",
+      "note": "今天为10月26日；没有命中只能说明本次有限采样未找到。"
+    },
+    {
+      "n": 2,
+      "q": "不限日期，搜到的希罗内容真的是二重螺旋角色相关吗？请只给出游戏角色相关内容。",
+      "terms": [
+        "二重螺旋",
+        "希罗"
+      ],
+      "expected": [],
+      "forbidden": [
+        "9520c761d4254da6596b"
+      ],
+      "expect": "insufficient_evidence",
+      "note": "篮球卡内容虽然同时含希罗和活动标签，不是游戏角色内容，应排除。"
+    },
+    {
+      "n": 3,
+      "q": "昨天有没有二重螺旋1.7的入坑或回坑指南？",
+      "terms": [
+        "二重螺旋",
+        "1.7"
+      ],
+      "time_range": {
+        "start": "2026-10-25",
+        "end": "2026-10-26",
+        "timezone": "Asia/Shanghai"
+      },
+      "expected": [
+        "f234ce395819c14579bf",
+        "886fdcd00cf441669b27"
+      ],
+      "forbidden": [],
+      "expect": "found",
+      "note": "允许找到其中一条；不要把纯刷图实战都当作入坑指南。"
+    },
+    {
+      "n": 4,
+      "q": "找一个不超过5分钟的二重螺旋止流速刷实战视频。",
+      "terms": [
+        "止流",
+        "速刷"
+      ],
+      "max_duration_seconds": 300,
+      "expected": [
+        "cd8aeba14ff052bdb78f"
+      ],
+      "forbidden": [
+        "92b9467f03e224b9da89"
+      ],
+      "expect": "found",
+      "note": "224秒的视频合格；314秒视频不能返回。标题1分58秒是实战描述，不等于视频时长。"
+    },
+    {
+      "n": 5,
+      "q": "有没有讲二重螺旋1.7魔之楔副本改动、刷取窍门的内容？",
+      "terms": [
+        "二重螺旋",
+        "刷取",
+        "改动"
+      ],
+      "expected": [
+        "82721bf0b7d77dcdd86c"
+      ],
+      "forbidden": [],
+      "expect": "found",
+      "note": "标题可支持存在此主题视频，不能编出视频中未提供的刷取方法。"
+    },
+    {
+      "n": 6,
+      "q": "有没有二重螺旋黎瑟皮肤特效和染色展示？",
+      "terms": [
+        "黎瑟",
+        "染色"
+      ],
+      "expected": [
+        "d4fe08c18d8312db366b"
+      ],
+      "forbidden": [],
+      "expect": "found",
+      "note": "标题可支持展示主题；不能描述实际颜色、画面或值得升级的结论。"
+    },
+    {
+      "n": 7,
+      "q": "那条二重螺旋最强雷队、灾厄200层视频标题提到了哪些角色？能据此认定是最强队伍吗？",
+      "terms": [
+        "二重螺旋",
+        "200"
+      ],
+      "expected": [
+        "04c9911138d9507ad671"
+      ],
+      "forbidden": [],
+      "expect": "found",
+      "note": "只可转述标题列出黎瑟、煜明、扶疏；最强为作者主张，不能独立确认。"
+    },
+    {
+      "n": 8,
+      "q": "苏乙《JUMP》二创的动作和场景分别署名给谁？",
+      "terms": [
+        "苏乙",
+        "JUMP"
+      ],
+      "expected": [
+        "d92bf4e9d501809a03cf"
+      ],
+      "forbidden": [],
+      "expect": "found",
+      "note": "存储正文明确署名动作NatsumiSan、场景ChyetYi；应提供这段证据，只有标题不足。",
+      "required_quotes": [
+        "NatsumiSan",
+        "ChyetYi"
+      ]
+    },
+    {
+      "n": 9,
+      "q": "找不超过1分钟的二重螺旋法露茜二创。",
+      "terms": [
+        "二重螺旋",
+        "法露茜"
+      ],
+      "max_duration_seconds": 60,
+      "expected": [
+        "16b4fba3e45fb434a540",
+        "d1ebd7e15357f92934de"
+      ],
+      "forbidden": [
+        "e3b38e994d943e5a6eba"
+      ],
+      "expect": "found",
+      "note": "33秒和43秒符合；185秒不符合。允许明确说明主要依据标签。"
+    },
+    {
+      "n": 10,
+      "q": "最近十天有哪些二重螺旋二创？排除仅挂活动标签的影视、篮球和其他游戏内容。",
+      "terms": [
+        "二重螺旋",
+        "二创"
+      ],
+      "time_range": {
+        "start": "2026-10-17",
+        "end": "2026-10-27",
+        "timezone": "Asia/Shanghai"
+      },
+      "expected": [
+        "d92bf4e9d501809a03cf",
+        "aa5ac77e7e65e523d681",
+        "16b4fba3e45fb434a540",
+        "d1ebd7e15357f92934de",
+        "e3b38e994d943e5a6eba",
+        "83ec4fd8812632720ad8"
+      ],
+      "forbidden": [
+        "23f433c297a87c181bdd",
+        "e3c76187ac18e8be666d",
+        "ed13b3a9948e96e98087",
+        "01d853c2c705ed558fac",
+        "869cc732635d1903b882",
+        "1eadf15f4fb01b5d4430",
+        "5169cdff77c0dbe73b51"
+      ],
+      "expect": "found",
+      "note": "不要求返回全部；不能因为活动标签就把影视剪辑或Warframe当二重螺旋二创。"
+    },
+    {
+      "n": 11,
+      "q": "GTEW的游戏小仓库昨天发了哪些内容？",
+      "terms": [
+        "GTEW的游戏小仓库"
+      ],
+      "time_range": {
+        "start": "2026-10-25",
+        "end": "2026-10-26",
+        "timezone": "Asia/Shanghai"
+      },
+      "expected": [
+        "82721bf0b7d77dcdd86c",
+        "cf7d8aab7916ac488445"
+      ],
+      "forbidden": [],
+      "expect": "found",
+      "note": "两条标题分别涉及mod副本改动刷取、角色刷取和配装；作者名不是足够的内容证据。"
+    },
+    {
+      "n": 12,
+      "q": "《你留下的春天》用了什么图像素材和背景音乐？",
+      "terms": [
+        "你留下的春天"
+      ],
+      "expected": [
+        "c70646bf169500c49212"
+      ],
+      "forbidden": [],
+      "expect": "found",
+      "note": "正文明确图像素材为二重螺旋官方漫画《流光照影》，BGM为My Little Garden；引用需包含这些署名。",
+      "required_quotes": [
+        "流光照影",
+        "My Little Garden"
+      ]
+    }
+  ]
+}

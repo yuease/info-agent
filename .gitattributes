@@ -1,2 +1,4 @@
 * text=auto
 *.sh text eol=lf
+# Frozen acceptance fixtures are verified byte-for-byte by manifest.json.
+tests/fixtures/agent_v4_20261026/* -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

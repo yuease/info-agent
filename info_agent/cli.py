@@ -7,6 +7,15 @@ from info_agent.schemas import Profile
 from info_agent.storage import Store
 from info_agent.preferences import refresh_safe
 from info_agent.workflow import ROOT, build_briefing, local_now
+from info_agent.errors import RunFailure, classify, public_diagnostic
+
+
+def task_error(job,exc):
+    diagnosis=exc.diagnosis if isinstance(exc,RunFailure) else classify(exc,'unknown')
+    job.update(public_diagnostic(diagnosis))
+    job.update(status='completed' if diagnosis.get('status') in ('completed','empty','preview','collection') else 'failed',
+               record_available=bool(diagnosis.get('data_saved')))
+    if job['status']=='completed':job['warning']=job.get('error_message')
 
 
 def main(argv=None):
@@ -26,6 +35,7 @@ def main(argv=None):
     preferences.add_argument('--restore', type=int)
     preferences.add_argument('--reset', action='store_true')
     sub.add_parser('recover')
+    sub.add_parser('collect',help='仅刷新来源并写入持久候选池，不调用模型')
     backup = sub.add_parser('backup')
     backup.add_argument('destination', type=Path)
     legacy = sub.add_parser('import-legacy')
@@ -36,6 +46,7 @@ def main(argv=None):
     try:
         profile = Profile.model_validate(json.loads(args.profile.read_text(encoding='utf-8-sig')))
         db = Store(ROOT / 'workspace' / 'info_agent.sqlite3')
+        profile = Profile.model_validate(json.loads(args.profile.read_text(encoding='utf-8-sig')))
         if args.command == 'backup':
             db.backup(args.destination)
             print(f'备份已保存：{args.destination}')
@@ -45,6 +56,27 @@ def main(argv=None):
         elif args.command == 'recover':
             db.recover()
             print('已从数据库恢复已提交产物。')
+        elif args.command == 'collect' or args.preview and args.command is None:
+            from info_agent.collection import collect
+            from info_agent.workflow import new_run_id
+            from info_agent.jobs import claim,Lease
+            now=local_now();run_id=new_run_id(now)
+            job=dict(id=run_id,run_id=run_id,status='running',started=now.isoformat(),preview=True,record_available=False)
+            owner=claim(db,'collect',job,now)
+            if owner is None:
+                from info_agent.errors import DiagnosedError
+                raise DiagnosedError('TASK_BUSY')
+            with Lease(ROOT/'workspace'/'info_agent.sqlite3','collect',owner) as lease:
+                try:
+                    result=collect(profile.model_dump(),store=db,clock=local_now,run_id=run_id)
+                    job.update(status='completed',record_available=True)
+                except Exception as exc:
+                    task_error(job,exc)
+                    raise
+                finally:
+                    job['finished']=local_now().isoformat()
+                    lease.finish(db,job)
+            print(f"采集完成，{len(result['articles'])} 条条目已保存到候选池；未调用模型。运行编号：{run_id}")
         elif args.command == 'preferences':
             if args.reset:
                 version, _ = db.save_preferences(profile.context, local_now(), {}, {})
@@ -87,7 +119,23 @@ def main(argv=None):
             if error:
                 print('偏好暂未更新，已保留旧版本；下次运行会自动重算。')
         else:
-            result = build_briefing(profile.model_dump(), preview=args.preview, store=db).invoke({})
+            from info_agent.workflow import new_run_id
+            from info_agent.jobs import claim,Lease
+            from info_agent.errors import DiagnosedError
+            now=local_now();run_id=new_run_id(now)
+            job=dict(id=run_id,run_id=run_id,status='running',started=now.isoformat(),preview=False,record_available=False)
+            owner=claim(db,'generate',job,now)
+            if owner is None:raise DiagnosedError('TASK_BUSY')
+            with Lease(ROOT/'workspace'/'info_agent.sqlite3','generate',owner) as lease:
+                try:
+                    result=build_briefing(profile.model_dump(),store=db,run_id=run_id,from_pool=True).invoke({})
+                    job.update(status='completed',record_available=True)
+                except Exception as exc:
+                    task_error(job,exc)
+                    raise
+                finally:
+                    job['finished']=local_now().isoformat()
+                    lease.finish(db,job)
             print(f"取得 {len(result['articles'])} 条候选；{len(result['failures'])} 个来源失败。")
             print('仅预览，未调用模型。' if args.preview else f"推荐 {len(result['selection']['picks'])} 条。")
             print(f"保存位置：{db.output / result['run_id']}")
@@ -95,7 +143,10 @@ def main(argv=None):
                 print(result['report'])
         return 0
     except Exception as exc:
-        print(f'处理失败（{type(exc).__name__}）。请检查配置或运行记录；文件导出失败可运行 recover 恢复。', file=sys.stderr)
+        diagnosis = exc.diagnosis if isinstance(exc,RunFailure) else classify(exc,'recover' if args.command=='recover' else 'unknown')
+        print(f"{diagnosis['error_message']} [{diagnosis['error_code']}]", file=sys.stderr)
+        if isinstance(exc,RunFailure):
+            print(f'运行编号：{exc.run_id}', file=sys.stderr)
         return 1
     finally:
         if db:

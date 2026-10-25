@@ -1,0 +1,12 @@
+{
+  "note": "原始已保存验收资料的字节副本；无供应商原始响应；旧手机Codex负例仍在agent_acceptance_20261025.json",
+  "sha256": {
+    "二重螺旋验收-采集快照.json": "e6f3483eb6db0645ac63ee17114f2100aa458c1444b1e5f7bfec5ba6060e933e",
+    "二重螺旋验收-题目与参考.json": "31be285d3f4771a87846bbfd136de9d174e9f6562fdfc806e1a1b3467896032a",
+    "二重螺旋验收-运行结果.json": "d8079e30f79e8866cdd3483490a2ccad24825ff572114b34d2bdf3b250715bb3",
+    "二重螺旋验收-诊断.json": "9cdeb5a805f1d422bbebbcbf1e2d9f396ba83a31848933120d0a51a0c45f6235",
+    "二重螺旋真实验收报告-20261026.md": "88ebdbdafdb0ebd7a5b91400e56c761bf1443ae2e7ca106b02ce8383826b3939",
+    "v3-input-baseline.json": "1d35ecfe2359aee1730c11f75ac3d41dad47ce304616daf4a67bca983e14bc99"
+  },
+  "baseline_note": "实施前用旧v3代码在同一冻结条目上重新构建的离线输入包；不是历史供应商原始响应。"
+}
